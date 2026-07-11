@@ -1,0 +1,9 @@
+# VeriSAGE artifact dependencies (Python 3.9+).
+# The verifier, benchmarks, core experiments, figure generation, and the
+# smoke/check scripts need only numpy + matplotlib. z3-solver is optional and
+# used solely by the C2 SMT microbenchmark in exp3_scalability.py; the LLM
+# proposer (experiments_llm.py) talks to a local Ollama server over HTTP and
+# needs no extra Python package.
+numpy>=1.21
+matplotlib>=3.4
+z3-solver>=4.12   # optional: only for the C2 (QF-LIA+EUF) timing microbenchmark
