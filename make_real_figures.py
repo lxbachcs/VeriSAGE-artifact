@@ -71,21 +71,36 @@ axa.set_title("(a) lightweight structural checker", fontsize=8.5)
 for sp in ("top", "right"): axa.spines[sp].set_visible(False)
 
 # --- panel (b): production Z3-backed C2 cost vs formula size (milliseconds) ---
+# bar + line: categorical bars anchor each mean; the n=1 sd (dominated by fixed
+# Z3 startup/measurement noise, not solver work) is clipped and its true value
+# annotated so the panel stays readable.
 z3res = E3.get("z3_c2", {})
 if z3res.get("available"):
     cur = z3res["curve"]
-    na = np.array([c["n_atoms"] for c in cur], float)
+    atoms = [c["n_atoms"] for c in cur]
     msc = np.array([c["ms_mean"] for c in cur], float)
     msc_sd = np.array([c["ms_sd"] for c in cur], float)
-    axb.errorbar(na, msc, yerr=msc_sd, fmt="-o", color=C["green"], ms=3.5,
-                 capsize=2.5, mec="black", mew=0.4, label="measured (Z3, 30 reps)")
-    axb.axhline(1.0, color=C["gray"], ls="--", lw=0.9)
-    axb.text(na.max(), 1.0, " 1\\,ms", fontsize=7, color=C["gray"],
-             ha="right", va="bottom")
+    posb = np.arange(len(atoms))
+    axb.axhline(1.0, color=C["gray"], ls="--", lw=1.0)
+    axb.text(0.55, 1.03, "1 ms budget", fontsize=7.5, color=C["gray"],
+             ha="left", va="bottom")
+    axb.bar(posb, msc, width=0.6, color=C["green"], alpha=0.30,
+            edgecolor=C["green"], lw=1.0, zorder=2)
+    CAP = 0.30
+    e_disp = np.minimum(msc_sd, CAP)
+    axb.errorbar(posb, msc, yerr=e_disp, fmt="o-", color=C["green"], ms=4,
+                 lw=1.3, capsize=3, mec="black", mew=0.4, ecolor="#0b3d34",
+                 elinewidth=1.0, zorder=3, label="measured (Z3, 30 reps)")
+    for i in np.where(msc_sd > CAP)[0]:
+        axb.annotate(f"sd {msc_sd[i]:.1f}", (posb[i], msc[i] + e_disp[i] + 0.03),
+                     fontsize=6.3, ha="center", va="bottom", color="0.35")
+    axb.set_xticks(posb); axb.set_xticklabels([str(a) for a in atoms])
     axb.set_xlabel("pre/postcondition size (# atoms)")
-    axb.set_ylabel("C2 SMT time (ms/service)")
-    axb.set_ylim(0, max(1.25, float(msc.max()) * 1.15))
-    axb.legend(fontsize=8, loc="upper left")
+    axb.set_ylabel("C2 SMT time (ms/service)", fontsize=8.5)
+    axb.set_xlim(-0.6, len(atoms) - 0.4)
+    axb.set_ylim(0, 1.32)
+    axb.legend(fontsize=8, loc="upper center", bbox_to_anchor=(0.5, 1.03))
+    axb.grid(axis="x", visible=False)
     axb.set_title("(b) production full-solver C2 (Z3)", fontsize=8.5)
     for sp in ("top", "right"): axb.spines[sp].set_visible(False)
 fig.tight_layout()
