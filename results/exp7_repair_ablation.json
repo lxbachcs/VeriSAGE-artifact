@@ -1,0 +1,41 @@
+{
+  "none": {
+    "regime": "none",
+    "n_tasks": 4000,
+    "T": 6,
+    "CSR_pct": 0.0,
+    "mean_iters_to_certify": -1,
+    "n_certified": 0
+  },
+  "none_by_difficulty": {
+    "defects_1": 0.0,
+    "defects_2": 0.0,
+    "defects_3": 0.0
+  },
+  "nl": {
+    "regime": "nl",
+    "n_tasks": 4000,
+    "T": 6,
+    "CSR_pct": 75.92,
+    "mean_iters_to_certify": 3.404,
+    "n_certified": 3037
+  },
+  "nl_by_difficulty": {
+    "defects_1": 92.1,
+    "defects_2": 76.65,
+    "defects_3": 57.5
+  },
+  "typed": {
+    "regime": "typed",
+    "n_tasks": 4000,
+    "T": 6,
+    "CSR_pct": 100.0,
+    "mean_iters_to_certify": 2.204,
+    "n_certified": 4000
+  },
+  "typed_by_difficulty": {
+    "defects_1": 100.0,
+    "defects_2": 100.0,
+    "defects_3": 100.0
+  }
+}

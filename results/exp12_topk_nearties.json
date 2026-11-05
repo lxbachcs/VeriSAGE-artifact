@@ -1,0 +1,178 @@
+{
+  "delta": 0.05,
+  "n_paths": 8,
+  "path_len": 6,
+  "n_mc": 40000,
+  "sweep": [
+    {
+      "mean_gap": 0.6,
+      "n_paths": 8,
+      "per_k": [
+        {
+          "k": 1,
+          "conservatism_x": 2.383,
+          "emp_viol": 0.0,
+          "sound": true
+        },
+        {
+          "k": 2,
+          "conservatism_x": 2.492,
+          "emp_viol": 0.0,
+          "sound": true
+        },
+        {
+          "k": 4,
+          "conservatism_x": 2.629,
+          "emp_viol": 0.0,
+          "sound": true
+        },
+        {
+          "k": 8,
+          "conservatism_x": 2.786,
+          "emp_viol": 0.0,
+          "sound": true
+        }
+      ],
+      "criterion_k": 8,
+      "criterion_conservatism_x": 2.786,
+      "criterion_emp_viol": 0.0,
+      "criterion_sound": true
+    },
+    {
+      "mean_gap": 0.3,
+      "n_paths": 8,
+      "per_k": [
+        {
+          "k": 1,
+          "conservatism_x": 2.339,
+          "emp_viol": 0.0,
+          "sound": true
+        },
+        {
+          "k": 2,
+          "conservatism_x": 2.495,
+          "emp_viol": 0.0,
+          "sound": true
+        },
+        {
+          "k": 4,
+          "conservatism_x": 2.612,
+          "emp_viol": 0.0,
+          "sound": true
+        },
+        {
+          "k": 8,
+          "conservatism_x": 2.754,
+          "emp_viol": 0.0,
+          "sound": true
+        }
+      ],
+      "criterion_k": 7,
+      "criterion_conservatism_x": 2.725,
+      "criterion_emp_viol": 0.0,
+      "criterion_sound": true
+    },
+    {
+      "mean_gap": 0.15,
+      "n_paths": 8,
+      "per_k": [
+        {
+          "k": 1,
+          "conservatism_x": 2.225,
+          "emp_viol": 0.0,
+          "sound": true
+        },
+        {
+          "k": 2,
+          "conservatism_x": 2.417,
+          "emp_viol": 0.0,
+          "sound": true
+        },
+        {
+          "k": 4,
+          "conservatism_x": 2.546,
+          "emp_viol": 0.0,
+          "sound": true
+        },
+        {
+          "k": 8,
+          "conservatism_x": 2.659,
+          "emp_viol": 0.0,
+          "sound": true
+        }
+      ],
+      "criterion_k": 6,
+      "criterion_conservatism_x": 2.609,
+      "criterion_emp_viol": 0.0,
+      "criterion_sound": true
+    },
+    {
+      "mean_gap": 0.05,
+      "n_paths": 8,
+      "per_k": [
+        {
+          "k": 1,
+          "conservatism_x": 1.99,
+          "emp_viol": 0.0,
+          "sound": true
+        },
+        {
+          "k": 2,
+          "conservatism_x": 2.192,
+          "emp_viol": 0.0,
+          "sound": true
+        },
+        {
+          "k": 4,
+          "conservatism_x": 2.359,
+          "emp_viol": 0.0,
+          "sound": true
+        },
+        {
+          "k": 8,
+          "conservatism_x": 2.484,
+          "emp_viol": 0.0,
+          "sound": true
+        }
+      ],
+      "criterion_k": 7,
+      "criterion_conservatism_x": 2.463,
+      "criterion_emp_viol": 0.0,
+      "criterion_sound": true
+    },
+    {
+      "mean_gap": 0.0,
+      "n_paths": 8,
+      "per_k": [
+        {
+          "k": 1,
+          "conservatism_x": 1.751,
+          "emp_viol": 0.0,
+          "sound": true
+        },
+        {
+          "k": 2,
+          "conservatism_x": 1.943,
+          "emp_viol": 0.0,
+          "sound": true
+        },
+        {
+          "k": 4,
+          "conservatism_x": 2.118,
+          "emp_viol": 0.0,
+          "sound": true
+        },
+        {
+          "k": 8,
+          "conservatism_x": 2.279,
+          "emp_viol": 0.0,
+          "sound": true
+        }
+      ],
+      "criterion_k": 8,
+      "criterion_conservatism_x": 2.279,
+      "criterion_emp_viol": 0.0,
+      "criterion_sound": true
+    }
+  ]
+}

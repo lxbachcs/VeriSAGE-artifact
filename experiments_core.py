@@ -155,14 +155,14 @@ def e4_repair_convergence(n=3000, T=6, seed=3):
 
 
 def main():
-    os.makedirs("../results", exist_ok=True)
+    os.makedirs("results", exist_ok=True)
     res = {}
     print("E1 verifier accuracy ..."); res["e1_verifier_accuracy"] = e1_verifier_accuracy()
     print("E1b reduced-verifier ablation ..."); res["e1b_reduced_verifier"] = e1b_reduced_verifier_ablation()
     print("E2 SLA calibration ...");    res["e2_sla_calibration"] = e2_sla_calibration()
     print("E3 scalability ...");        res["e3_scalability"] = e3_scalability()
     print("E4 repair convergence ..."); res["e4_repair_convergence"] = e4_repair_convergence()
-    with open("../results/core_results.json", "w") as f:
+    with open("results/core_results.json", "w") as f:
         json.dump(res, f, indent=2)
     print(json.dumps(res, indent=2))
 

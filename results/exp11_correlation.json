@@ -1,0 +1,378 @@
+{
+  "conservatism": {
+    "delta": 0.05,
+    "m": 8,
+    "u": 1.0,
+    "curve": [
+      {
+        "rho": 1.0,
+        "slack_hoeffding": 3.4616,
+        "slack_bennett": 3.9313,
+        "slack_chebyshev_robust": 17.4356,
+        "slack_frechet_comonotone": 3.6,
+        "chebyshev_over_hoeffding": 5.037,
+        "chebyshev_over_bennett": 4.435,
+        "frechet_over_hoeffding": 1.04
+      },
+      {
+        "rho": 0.5,
+        "slack_hoeffding": 3.4616,
+        "slack_bennett": 2.9078,
+        "slack_chebyshev_robust": 12.3288,
+        "slack_frechet_comonotone": 3.6,
+        "chebyshev_over_hoeffding": 3.562,
+        "chebyshev_over_bennett": 4.24,
+        "frechet_over_hoeffding": 1.04
+      },
+      {
+        "rho": 0.25,
+        "slack_hoeffding": 3.4616,
+        "slack_bennett": 2.1791,
+        "slack_chebyshev_robust": 8.7178,
+        "slack_frechet_comonotone": 3.6,
+        "chebyshev_over_hoeffding": 2.518,
+        "chebyshev_over_bennett": 4.001,
+        "frechet_over_hoeffding": 1.04
+      },
+      {
+        "rho": 0.1,
+        "slack_hoeffding": 3.4616,
+        "slack_bennett": 1.5239,
+        "slack_chebyshev_robust": 5.5136,
+        "slack_frechet_comonotone": 3.6,
+        "chebyshev_over_hoeffding": 1.593,
+        "chebyshev_over_bennett": 3.618,
+        "frechet_over_hoeffding": 1.04
+      },
+      {
+        "rho": 0.05,
+        "slack_hoeffding": 3.4616,
+        "slack_bennett": 1.1864,
+        "slack_chebyshev_robust": 3.8987,
+        "slack_frechet_comonotone": 3.6,
+        "chebyshev_over_hoeffding": 1.126,
+        "chebyshev_over_bennett": 3.286,
+        "frechet_over_hoeffding": 1.04
+      },
+      {
+        "rho": 0.01,
+        "slack_hoeffding": 3.4616,
+        "slack_bennett": 0.7132,
+        "slack_chebyshev_robust": 1.7436,
+        "slack_frechet_comonotone": 3.6,
+        "chebyshev_over_hoeffding": 0.504,
+        "chebyshev_over_bennett": 2.445,
+        "frechet_over_hoeffding": 1.04
+      }
+    ]
+  },
+  "soundness_under_correlation": {
+    "delta": 0.05,
+    "slack_hoeffding": 3.4616,
+    "slack_chebyshev_robust": 10.0664,
+    "slack_frechet": 3.6,
+    "rows": [
+      {
+        "rho_corr": 0.0,
+        "emp_viol_indep_hoeffding": 0.0,
+        "emp_viol_chebyshev_robust": 0.0,
+        "emp_viol_frechet": 0.0,
+        "hoeffding_sound": true,
+        "chebyshev_sound": true,
+        "frechet_sound": true
+      },
+      {
+        "rho_corr": 0.3,
+        "emp_viol_indep_hoeffding": 0.00155,
+        "emp_viol_chebyshev_robust": 0.0,
+        "emp_viol_frechet": 0.0006,
+        "hoeffding_sound": true,
+        "chebyshev_sound": true,
+        "frechet_sound": true
+      },
+      {
+        "rho_corr": 0.6,
+        "emp_viol_indep_hoeffding": 0.0163,
+        "emp_viol_chebyshev_robust": 0.0,
+        "emp_viol_frechet": 0.00958,
+        "hoeffding_sound": true,
+        "chebyshev_sound": true,
+        "frechet_sound": true
+      },
+      {
+        "rho_corr": 0.9,
+        "emp_viol_indep_hoeffding": 0.05305,
+        "emp_viol_chebyshev_robust": 0.0,
+        "emp_viol_frechet": 0.03795,
+        "hoeffding_sound": false,
+        "chebyshev_sound": true,
+        "frechet_sound": true
+      },
+      {
+        "rho_corr": 1.0,
+        "emp_viol_indep_hoeffding": 0.06807,
+        "emp_viol_chebyshev_robust": 0.0,
+        "emp_viol_frechet": 0.05005,
+        "hoeffding_sound": false,
+        "chebyshev_sound": true,
+        "frechet_sound": false
+      }
+    ]
+  },
+  "admission_hit_qws": {
+    "delta": 0.05,
+    "n_mc": 20000,
+    "qws_marginal": {
+      "n": 2507,
+      "support_ub_ms": 4989.7,
+      "mean_ms": 383.8,
+      "std_ms": 564.2
+    },
+    "slack_ratio_robust_over_hoeff_min": 0.806,
+    "slack_ratio_robust_over_hoeff_max": 1.452,
+    "hoeffding_unsafe_admit_frac_hi_corr": 0.0,
+    "hoeffding_worst_true_violation": 0.0269,
+    "robust_safe_under_all_correlation": true,
+    "rows": [
+      {
+        "m": 4,
+        "rho_corr": 0.0,
+        "slack_ratio_robust_over_hoeff": 0.806,
+        "true_viol_at_hoeffding_budget": 0.0,
+        "true_viol_at_robust_budget": 0.0,
+        "hoeffding_unsafe_admit": false,
+        "robust_safe": true
+      },
+      {
+        "m": 4,
+        "rho_corr": 0.3,
+        "slack_ratio_robust_over_hoeff": 0.806,
+        "true_viol_at_hoeffding_budget": 0.00025,
+        "true_viol_at_robust_budget": 0.0011,
+        "hoeffding_unsafe_admit": false,
+        "robust_safe": true
+      },
+      {
+        "m": 4,
+        "rho_corr": 0.6,
+        "slack_ratio_robust_over_hoeff": 0.806,
+        "true_viol_at_hoeffding_budget": 0.00165,
+        "true_viol_at_robust_budget": 0.0045,
+        "hoeffding_unsafe_admit": false,
+        "robust_safe": true
+      },
+      {
+        "m": 4,
+        "rho_corr": 0.9,
+        "slack_ratio_robust_over_hoeff": 0.806,
+        "true_viol_at_hoeffding_budget": 0.00635,
+        "true_viol_at_robust_budget": 0.0124,
+        "hoeffding_unsafe_admit": false,
+        "robust_safe": true
+      },
+      {
+        "m": 4,
+        "rho_corr": 1.0,
+        "slack_ratio_robust_over_hoeff": 0.806,
+        "true_viol_at_hoeffding_budget": 0.00825,
+        "true_viol_at_robust_budget": 0.0176,
+        "hoeffding_unsafe_admit": false,
+        "robust_safe": true
+      },
+      {
+        "m": 6,
+        "rho_corr": 0.0,
+        "slack_ratio_robust_over_hoeff": 0.987,
+        "true_viol_at_hoeffding_budget": 0.0,
+        "true_viol_at_robust_budget": 0.0,
+        "hoeffding_unsafe_admit": false,
+        "robust_safe": true
+      },
+      {
+        "m": 6,
+        "rho_corr": 0.3,
+        "slack_ratio_robust_over_hoeff": 0.987,
+        "true_viol_at_hoeffding_budget": 0.0004,
+        "true_viol_at_robust_budget": 0.0004,
+        "hoeffding_unsafe_admit": false,
+        "robust_safe": true
+      },
+      {
+        "m": 6,
+        "rho_corr": 0.6,
+        "slack_ratio_robust_over_hoeff": 0.987,
+        "true_viol_at_hoeffding_budget": 0.0033,
+        "true_viol_at_robust_budget": 0.0035,
+        "hoeffding_unsafe_admit": false,
+        "robust_safe": true
+      },
+      {
+        "m": 6,
+        "rho_corr": 0.9,
+        "slack_ratio_robust_over_hoeff": 0.987,
+        "true_viol_at_hoeffding_budget": 0.01165,
+        "true_viol_at_robust_budget": 0.0121,
+        "hoeffding_unsafe_admit": false,
+        "robust_safe": true
+      },
+      {
+        "m": 6,
+        "rho_corr": 1.0,
+        "slack_ratio_robust_over_hoeff": 0.987,
+        "true_viol_at_hoeffding_budget": 0.017,
+        "true_viol_at_robust_budget": 0.0172,
+        "hoeffding_unsafe_admit": false,
+        "robust_safe": true
+      },
+      {
+        "m": 8,
+        "rho_corr": 0.0,
+        "slack_ratio_robust_over_hoeff": 1.139,
+        "true_viol_at_hoeffding_budget": 0.0,
+        "true_viol_at_robust_budget": 0.0,
+        "hoeffding_unsafe_admit": false,
+        "robust_safe": true
+      },
+      {
+        "m": 8,
+        "rho_corr": 0.3,
+        "slack_ratio_robust_over_hoeff": 1.139,
+        "true_viol_at_hoeffding_budget": 0.0006,
+        "true_viol_at_robust_budget": 0.00025,
+        "hoeffding_unsafe_admit": false,
+        "robust_safe": true
+      },
+      {
+        "m": 8,
+        "rho_corr": 0.6,
+        "slack_ratio_robust_over_hoeff": 1.139,
+        "true_viol_at_hoeffding_budget": 0.00575,
+        "true_viol_at_robust_budget": 0.00385,
+        "hoeffding_unsafe_admit": false,
+        "robust_safe": true
+      },
+      {
+        "m": 8,
+        "rho_corr": 0.9,
+        "slack_ratio_robust_over_hoeff": 1.139,
+        "true_viol_at_hoeffding_budget": 0.01565,
+        "true_viol_at_robust_budget": 0.0123,
+        "hoeffding_unsafe_admit": false,
+        "robust_safe": true
+      },
+      {
+        "m": 8,
+        "rho_corr": 1.0,
+        "slack_ratio_robust_over_hoeff": 1.139,
+        "true_viol_at_hoeffding_budget": 0.0209,
+        "true_viol_at_robust_budget": 0.0167,
+        "hoeffding_unsafe_admit": false,
+        "robust_safe": true
+      },
+      {
+        "m": 10,
+        "rho_corr": 0.0,
+        "slack_ratio_robust_over_hoeff": 1.274,
+        "true_viol_at_hoeffding_budget": 0.0,
+        "true_viol_at_robust_budget": 0.0,
+        "hoeffding_unsafe_admit": false,
+        "robust_safe": true
+      },
+      {
+        "m": 10,
+        "rho_corr": 0.3,
+        "slack_ratio_robust_over_hoeff": 1.274,
+        "true_viol_at_hoeffding_budget": 0.00085,
+        "true_viol_at_robust_budget": 0.00025,
+        "hoeffding_unsafe_admit": false,
+        "robust_safe": true
+      },
+      {
+        "m": 10,
+        "rho_corr": 0.6,
+        "slack_ratio_robust_over_hoeff": 1.274,
+        "true_viol_at_hoeffding_budget": 0.00645,
+        "true_viol_at_robust_budget": 0.0021,
+        "hoeffding_unsafe_admit": false,
+        "robust_safe": true
+      },
+      {
+        "m": 10,
+        "rho_corr": 0.9,
+        "slack_ratio_robust_over_hoeff": 1.274,
+        "true_viol_at_hoeffding_budget": 0.0185,
+        "true_viol_at_robust_budget": 0.01065,
+        "hoeffding_unsafe_admit": false,
+        "robust_safe": true
+      },
+      {
+        "m": 10,
+        "rho_corr": 1.0,
+        "slack_ratio_robust_over_hoeff": 1.274,
+        "true_viol_at_hoeffding_budget": 0.02335,
+        "true_viol_at_robust_budget": 0.0162,
+        "hoeffding_unsafe_admit": false,
+        "robust_safe": true
+      },
+      {
+        "m": 13,
+        "rho_corr": 0.0,
+        "slack_ratio_robust_over_hoeff": 1.452,
+        "true_viol_at_hoeffding_budget": 0.0,
+        "true_viol_at_robust_budget": 0.0,
+        "hoeffding_unsafe_admit": false,
+        "robust_safe": true
+      },
+      {
+        "m": 13,
+        "rho_corr": 0.3,
+        "slack_ratio_robust_over_hoeff": 1.452,
+        "true_viol_at_hoeffding_budget": 0.00165,
+        "true_viol_at_robust_budget": 0.0002,
+        "hoeffding_unsafe_admit": false,
+        "robust_safe": true
+      },
+      {
+        "m": 13,
+        "rho_corr": 0.6,
+        "slack_ratio_robust_over_hoeff": 1.452,
+        "true_viol_at_hoeffding_budget": 0.0104,
+        "true_viol_at_robust_budget": 0.0026,
+        "hoeffding_unsafe_admit": false,
+        "robust_safe": true
+      },
+      {
+        "m": 13,
+        "rho_corr": 0.9,
+        "slack_ratio_robust_over_hoeff": 1.452,
+        "true_viol_at_hoeffding_budget": 0.0247,
+        "true_viol_at_robust_budget": 0.0114,
+        "hoeffding_unsafe_admit": false,
+        "robust_safe": true
+      },
+      {
+        "m": 13,
+        "rho_corr": 1.0,
+        "slack_ratio_robust_over_hoeff": 1.452,
+        "true_viol_at_hoeffding_budget": 0.0269,
+        "true_viol_at_robust_budget": 0.0169,
+        "hoeffding_unsafe_admit": false,
+        "robust_safe": true
+      }
+    ]
+  },
+  "independence_scan": [
+    {
+      "catalogue": "payment",
+      "n_pairs": 45,
+      "correlated_pairs": 5,
+      "correlated_pair_fraction": 0.111
+    },
+    {
+      "catalogue": "regulated",
+      "n_pairs": 190,
+      "correlated_pairs": 18,
+      "correlated_pair_fraction": 0.095
+    }
+  ]
+}

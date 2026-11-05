@@ -1,0 +1,21 @@
+[qwen2.5:7b] 10/50  9s  {'direct_certified': np.float64(30.0), 'single_shot_certified': np.float64(30.0), 'blind_certified': np.float64(80.0), 'verisage_certified': np.float64(100.0)}
+[qwen2.5:7b] 20/50  21s  {'direct_certified': np.float64(30.0), 'single_shot_certified': np.float64(30.0), 'blind_certified': np.float64(75.0), 'verisage_certified': np.float64(100.0)}
+[qwen2.5:7b] 30/50  31s  {'direct_certified': np.float64(30.0), 'single_shot_certified': np.float64(30.0), 'blind_certified': np.float64(73.3), 'verisage_certified': np.float64(100.0)}
+[qwen2.5:7b] 40/50  41s  {'direct_certified': np.float64(32.5), 'single_shot_certified': np.float64(32.5), 'blind_certified': np.float64(75.0), 'verisage_certified': np.float64(100.0)}
+[qwen2.5:7b] 50/50  52s  {'direct_certified': np.float64(32.0), 'single_shot_certified': np.float64(32.0), 'blind_certified': np.float64(74.0), 'verisage_certified': np.float64(100.0)}
+
+=== SUMMARY ===
+{
+  "model": "qwen2.5:7b",
+  "n": 50,
+  "T": 4,
+  "direct_CSR": 32.0,
+  "single_shot_CSR": 32.0,
+  "blind_CSR": 74.0,
+  "verisage_CSR": 100.0,
+  "direct_HAR": 0.0,
+  "direct_SV": 32.0,
+  "verisage_mean_iters": 0.68,
+  "verisage_PC": 100.0,
+  "wall_s": 52.0
+}

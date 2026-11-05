@@ -1,0 +1,8 @@
+{
+  "full_recert_us": 6.958,
+  "suffix_recert_us": 0.5,
+  "n_full": 13,
+  "n_suffix": 7,
+  "per_service_us": 0.5352,
+  "note": "structural C1-C5 re-verification (no SMT) of a plan / residual suffix; models online re-certification on a guard-flipping context change"
+}

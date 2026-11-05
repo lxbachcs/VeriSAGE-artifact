@@ -1,0 +1,106 @@
+{
+  "payment": {
+    "catalogue": "payment",
+    "budget": 7125.84,
+    "qos_milp": {
+      "found": true,
+      "plan": [
+        "readCard",
+        "authenticate",
+        "tokenize",
+        "chargeCard",
+        "emailReceipt",
+        "analyticsSink"
+      ],
+      "latency_mean": 1473.07,
+      "considered": 1012,
+      "csts_certified": true,
+      "first_violation": "",
+      "witness": ""
+    },
+    "qos_ga_csts_certified_frac": 0.0,
+    "qos_ga_schema_ok_frac": 0.0,
+    "qos_ga_best": {
+      "plan": [
+        "tokenize",
+        "refund",
+        "logEvent"
+      ],
+      "latency_mean": 314.59,
+      "schema_ok": false,
+      "csts_certified": false,
+      "first_violation": "C1",
+      "witness": "tokenize missing input(s) ['card.pan']"
+    },
+    "verisage": {
+      "found": true,
+      "plan": [
+        "readCard",
+        "authenticate",
+        "tokenize",
+        "chargeCard",
+        "emailReceipt",
+        "analyticsSink"
+      ],
+      "latency_mean": 1473.07,
+      "csts_certified": true
+    },
+    "latency_gap_verisage_vs_milp": 0.0
+  },
+  "regulated": {
+    "catalogue": "regulated",
+    "budget": 8927.65,
+    "qos_milp": {
+      "found": true,
+      "plan": [
+        "readCard",
+        "readCustomer",
+        "hashEmail",
+        "analyticsSink",
+        "auditLog",
+        "quickCharge",
+        "emailReceipt"
+      ],
+      "latency_mean": 1648.25,
+      "considered": 1026875,
+      "csts_certified": false,
+      "first_violation": "C3",
+      "witness": "'charge' occurs before 'authenticate'"
+    },
+    "qos_ga_csts_certified_frac": 0.0,
+    "qos_ga_schema_ok_frac": 0.0,
+    "qos_ga_best": {
+      "plan": [
+        "readCustomer",
+        "logEvent",
+        "tokenize"
+      ],
+      "latency_mean": 333.34,
+      "schema_ok": false,
+      "csts_certified": false,
+      "first_violation": "C1",
+      "witness": "tokenize missing input(s) ['card.pan']"
+    },
+    "verisage": {
+      "found": true,
+      "plan": [
+        "readCard",
+        "readCustomer",
+        "authenticate",
+        "getConsent",
+        "kycCheck",
+        "fraudCheck",
+        "tokenize",
+        "redactSSN",
+        "hashEmail",
+        "chargeCard",
+        "emailReceipt",
+        "analyticsSink",
+        "auditLog"
+      ],
+      "latency_mean": 2666.35,
+      "csts_certified": true
+    },
+    "latency_gap_verisage_vs_milp": 1018.1
+  }
+}

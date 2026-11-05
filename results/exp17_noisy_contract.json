@@ -1,0 +1,58 @@
+{
+  "rates": [
+    0.0,
+    0.05,
+    0.1,
+    0.2,
+    0.3
+  ],
+  "false_rejection": [
+    {
+      "noise_rate": 0.0,
+      "false_rejection_rate": 0.0
+    },
+    {
+      "noise_rate": 0.05,
+      "false_rejection_rate": 3.07
+    },
+    {
+      "noise_rate": 0.1,
+      "false_rejection_rate": 6.8
+    },
+    {
+      "noise_rate": 0.2,
+      "false_rejection_rate": 12.07
+    },
+    {
+      "noise_rate": 0.3,
+      "false_rejection_rate": 19.0
+    }
+  ],
+  "unsafe_admission": [
+    {
+      "noise_rate": 0.0,
+      "unsafe_admission_rate": 0.0,
+      "n_inadmissible": 1500
+    },
+    {
+      "noise_rate": 0.05,
+      "unsafe_admission_rate": 2.6,
+      "n_inadmissible": 1500
+    },
+    {
+      "noise_rate": 0.1,
+      "unsafe_admission_rate": 5.27,
+      "n_inadmissible": 1500
+    },
+    {
+      "noise_rate": 0.2,
+      "unsafe_admission_rate": 9.6,
+      "n_inadmissible": 1500
+    },
+    {
+      "noise_rate": 0.3,
+      "unsafe_admission_rate": 14.6,
+      "n_inadmissible": 1500
+    }
+  ]
+}

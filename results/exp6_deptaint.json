@@ -1,0 +1,108 @@
+{
+  "edge_over_taint_payment": [
+    {
+      "opaque_frac": 0.0,
+      "spurious_edge_rate": 0.0,
+      "n_ops": 7
+    },
+    {
+      "opaque_frac": 0.25,
+      "spurious_edge_rate": 0.6403,
+      "n_ops": 7
+    },
+    {
+      "opaque_frac": 0.5,
+      "spurious_edge_rate": 0.7775,
+      "n_ops": 7
+    },
+    {
+      "opaque_frac": 0.75,
+      "spurious_edge_rate": 0.8424,
+      "n_ops": 7
+    },
+    {
+      "opaque_frac": 1.0,
+      "spurious_edge_rate": 0.875,
+      "n_ops": 7
+    }
+  ],
+  "edge_over_taint_regulated": [
+    {
+      "opaque_frac": 0.0,
+      "spurious_edge_rate": 0.0,
+      "n_ops": 13
+    },
+    {
+      "opaque_frac": 0.25,
+      "spurious_edge_rate": 0.5489,
+      "n_ops": 13
+    },
+    {
+      "opaque_frac": 0.5,
+      "spurious_edge_rate": 0.7007,
+      "n_ops": 13
+    },
+    {
+      "opaque_frac": 0.75,
+      "spurious_edge_rate": 0.7808,
+      "n_ops": 13
+    },
+    {
+      "opaque_frac": 1.0,
+      "spurious_edge_rate": 0.8235,
+      "n_ops": 13
+    }
+  ],
+  "c4_fp_synthetic": {
+    "opaque_25": {
+      "opaque_frac": 0.25,
+      "n_plans": 20000,
+      "mitigate": false,
+      "c4_false_positive_rate_pct": 16.83
+    },
+    "opaque_50": {
+      "opaque_frac": 0.5,
+      "n_plans": 20000,
+      "mitigate": false,
+      "c4_false_positive_rate_pct": 31.18
+    },
+    "opaque_75": {
+      "opaque_frac": 0.75,
+      "n_plans": 20000,
+      "mitigate": false,
+      "c4_false_positive_rate_pct": 43.87
+    },
+    "opaque_100": {
+      "opaque_frac": 1.0,
+      "n_plans": 20000,
+      "mitigate": false,
+      "c4_false_positive_rate_pct": 52.72
+    }
+  },
+  "c4_fp_mitigated": {
+    "opaque_25": {
+      "opaque_frac": 0.25,
+      "n_plans": 20000,
+      "mitigate": true,
+      "c4_false_positive_rate_pct": 5.32
+    },
+    "opaque_50": {
+      "opaque_frac": 0.5,
+      "n_plans": 20000,
+      "mitigate": true,
+      "c4_false_positive_rate_pct": 10.66
+    },
+    "opaque_75": {
+      "opaque_frac": 0.75,
+      "n_plans": 20000,
+      "mitigate": true,
+      "c4_false_positive_rate_pct": 15.97
+    },
+    "opaque_100": {
+      "opaque_frac": 1.0,
+      "n_plans": 20000,
+      "mitigate": true,
+      "c4_false_positive_rate_pct": 20.29
+    }
+  }
+}

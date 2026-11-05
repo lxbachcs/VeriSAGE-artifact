@@ -1,0 +1,105 @@
+{
+  "catalogue": "payment",
+  "catalogue_size": 10,
+  "sat_task": {
+    "certified": [
+      "readCard",
+      "authenticate",
+      "tokenize",
+      "chargeCard",
+      "emailReceipt",
+      "analyticsSink"
+    ],
+    "expanded": 105529,
+    "n_admissible": 1,
+    "L_max": 8,
+    "wall_s": 1.4199,
+    "verdict": "SAT"
+  },
+  "unsat_tasks": [
+    {
+      "certified": null,
+      "expanded": 41109,
+      "n_admissible": 0,
+      "L_max": 6,
+      "wall_s": 0.5544,
+      "verdict": "INFEASIBLE",
+      "capped": false,
+      "ground_truth_sat_leq6": false,
+      "sound": true,
+      "task": "no_declassifier"
+    },
+    {
+      "certified": null,
+      "expanded": 32852,
+      "n_admissible": 0,
+      "L_max": 6,
+      "wall_s": 0.4555,
+      "verdict": "INFEASIBLE",
+      "capped": false,
+      "ground_truth_sat_leq6": false,
+      "sound": true,
+      "task": "no_auth_precondition"
+    },
+    {
+      "certified": null,
+      "expanded": 4223,
+      "n_admissible": 0,
+      "L_max": 6,
+      "wall_s": 0.0494,
+      "verdict": "INFEASIBLE",
+      "capped": false,
+      "ground_truth_sat_leq6": false,
+      "sound": true,
+      "task": "impossible_budget"
+    },
+    {
+      "certified": null,
+      "expanded": 105529,
+      "n_admissible": 0,
+      "L_max": 6,
+      "wall_s": 1.5777,
+      "verdict": "INFEASIBLE",
+      "capped": false,
+      "ground_truth_sat_leq6": false,
+      "sound": true,
+      "task": "unproducible_goal"
+    }
+  ],
+  "all_infeasible_sound": true,
+  "runtime_coverage_sweep_regulated_unsat": [
+    {
+      "certified": null,
+      "expanded": 4915,
+      "n_admissible": 0,
+      "L_max": 3,
+      "wall_s": 0.064,
+      "verdict": "INFEASIBLE",
+      "capped": false,
+      "space_upper_bound": 6175,
+      "explored_fraction": 0.795951
+    },
+    {
+      "certified": null,
+      "expanded": 68771,
+      "n_admissible": 0,
+      "L_max": 4,
+      "wall_s": 0.9567,
+      "verdict": "INFEASIBLE",
+      "capped": false,
+      "space_upper_bound": 99199,
+      "explored_fraction": 0.693263
+    },
+    {
+      "certified": null,
+      "expanded": 800001,
+      "n_admissible": 0,
+      "L_max": 5,
+      "wall_s": 11.3036,
+      "verdict": "UNKNOWN",
+      "capped": true,
+      "space_upper_bound": 1494559,
+      "explored_fraction": 0.535276
+    }
+  ]
+}

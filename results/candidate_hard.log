@@ -1,0 +1,15 @@
+=== gemma2:9b hard ===
+[gemma2:9b] 10/20  47s  {'direct_certified': np.float64(20.0), 'single_shot_certified': np.float64(20.0), 'blind_certified': np.float64(90.0), 'verisage_certified': np.float64(100.0)}
+[gemma2:9b] 20/20  97s  {'direct_certified': np.float64(15.0), 'single_shot_certified': np.float64(15.0), 'blind_certified': np.float64(65.0), 'verisage_certified': np.float64(100.0)}
+  "direct_CSR": 15.0,
+  "single_shot_CSR": 15.0,
+  "blind_CSR": 65.0,
+  "verisage_CSR": 100.0,
+=== qwen2.5-coder:7b hard ===
+[qwen2.5-coder:7b] 10/20  76s  {'direct_certified': np.float64(0.0), 'single_shot_certified': np.float64(0.0), 'blind_certified': np.float64(10.0), 'verisage_certified': np.float64(20.0)}
+[qwen2.5-coder:7b] 20/20  149s  {'direct_certified': np.float64(5.0), 'single_shot_certified': np.float64(5.0), 'blind_certified': np.float64(20.0), 'verisage_certified': np.float64(20.0)}
+  "direct_CSR": 5.0,
+  "single_shot_CSR": 5.0,
+  "blind_CSR": 20.0,
+  "verisage_CSR": 20.0,
+ALLDONE

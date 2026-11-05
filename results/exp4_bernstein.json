@@ -1,0 +1,143 @@
+{
+  "slack_by_concentration": {
+    "delta": 0.05,
+    "m": 8,
+    "u": 1.0,
+    "curve": [
+      {
+        "rho_variance_fraction": 1.0,
+        "slack_hoeffding": 3.4616,
+        "slack_bernstein": 3.9967,
+        "slack_bennett": 3.9313,
+        "ratio_hoeff_over_bernstein": 0.866,
+        "ratio_hoeff_over_bennett": 0.881,
+        "slack_reduction_bennett_pct": -13.57
+      },
+      {
+        "rho_variance_fraction": 0.5,
+        "slack_hoeffding": 3.4616,
+        "slack_bernstein": 2.9974,
+        "slack_bennett": 2.9078,
+        "ratio_hoeff_over_bernstein": 1.155,
+        "ratio_hoeff_over_bennett": 1.19,
+        "slack_reduction_bennett_pct": 16.0
+      },
+      {
+        "rho_variance_fraction": 0.25,
+        "slack_hoeffding": 3.4616,
+        "slack_bernstein": 2.3007,
+        "slack_bennett": 2.1791,
+        "ratio_hoeff_over_bernstein": 1.505,
+        "ratio_hoeff_over_bennett": 1.589,
+        "slack_reduction_bennett_pct": 37.05
+      },
+      {
+        "rho_variance_fraction": 0.1,
+        "slack_hoeffding": 3.4616,
+        "slack_bernstein": 1.7024,
+        "slack_bennett": 1.5239,
+        "ratio_hoeff_over_bernstein": 2.033,
+        "ratio_hoeff_over_bennett": 2.272,
+        "slack_reduction_bennett_pct": 55.98
+      },
+      {
+        "rho_variance_fraction": 0.05,
+        "slack_hoeffding": 3.4616,
+        "slack_bernstein": 1.4204,
+        "slack_bennett": 1.1864,
+        "ratio_hoeff_over_bernstein": 2.437,
+        "ratio_hoeff_over_bennett": 2.918,
+        "slack_reduction_bennett_pct": 65.73
+      },
+      {
+        "rho_variance_fraction": 0.02,
+        "slack_hoeffding": 3.4616,
+        "slack_bernstein": 1.1985,
+        "slack_bennett": 0.8769,
+        "ratio_hoeff_over_bernstein": 2.888,
+        "ratio_hoeff_over_bennett": 3.947,
+        "slack_reduction_bennett_pct": 74.67
+      },
+      {
+        "rho_variance_fraction": 0.01,
+        "slack_hoeffding": 3.4616,
+        "slack_bernstein": 1.1068,
+        "slack_bennett": 0.7132,
+        "ratio_hoeff_over_bernstein": 3.127,
+        "ratio_hoeff_over_bennett": 4.853,
+        "slack_reduction_bennett_pct": 79.4
+      }
+    ]
+  },
+  "recalibrate_32k": {
+    "uniform": {
+      "delta": 0.05,
+      "n_plans": 32000,
+      "mc_checked": 2000,
+      "slack_ratio_hoeff_over_bernstein_mean": 1.184,
+      "slack_ratio_hoeff_over_bennett_mean": 1.293,
+      "slack_reduction_bernstein_pct_mean": 15.21,
+      "slack_reduction_bennett_pct_mean": 22.52,
+      "mean_budget_saving_bennett_pct": 22.52,
+      "empirical_sound_frac": {
+        "hoeffding": 1.0,
+        "bernstein": 1.0,
+        "bennett": 1.0
+      }
+    },
+    "twopoint": {
+      "delta": 0.05,
+      "n_plans": 32000,
+      "mc_checked": 2000,
+      "slack_ratio_hoeff_over_bernstein_mean": 0.799,
+      "slack_ratio_hoeff_over_bennett_mean": 0.829,
+      "slack_reduction_bernstein_pct_mean": -25.27,
+      "slack_reduction_bennett_pct_mean": -20.7,
+      "mean_budget_saving_bennett_pct": -20.7,
+      "empirical_sound_frac": {
+        "hoeffding": 1.0,
+        "bernstein": 1.0,
+        "bennett": 1.0
+      }
+    },
+    "beta22": {
+      "delta": 0.05,
+      "n_plans": 32000,
+      "mc_checked": 2000,
+      "slack_ratio_hoeff_over_bernstein_mean": 1.38,
+      "slack_ratio_hoeff_over_bennett_mean": 1.567,
+      "slack_reduction_bernstein_pct_mean": 27.08,
+      "slack_reduction_bennett_pct_mean": 36.06,
+      "mean_budget_saving_bennett_pct": 36.06,
+      "empirical_sound_frac": {
+        "hoeffding": 1.0,
+        "bernstein": 1.0,
+        "bennett": 1.0
+      }
+    }
+  },
+  "qws_real": {
+    "dataset": "QWS v2.0 (2507 real web services), response time (ms)",
+    "real_stats": {
+      "n": 2507,
+      "mean": 383.834,
+      "std": 564.249,
+      "p95": 1340.425,
+      "p99": 3287.7,
+      "max": 4989.67,
+      "skew": 4.39
+    },
+    "delta": 0.05,
+    "n_plans": 32000,
+    "mc_checked": 2000,
+    "support_ub_ms": 4989.7,
+    "slack_ratio_hoeff_over_bernstein_mean": 1.423,
+    "slack_ratio_hoeff_over_bennett_mean": 2.173,
+    "slack_reduction_bennett_pct_mean": 53.69,
+    "empirical_sound_frac": {
+      "hoeffding": 1.0,
+      "bernstein": 1.0,
+      "bennett": 1.0
+    }
+  }
+}

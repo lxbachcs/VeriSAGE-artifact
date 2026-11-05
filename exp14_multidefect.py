@@ -205,11 +205,11 @@ def run(regime, n_tasks=700, T=8, seed=0, class_dist=(2, 3, 4)):
 
 
 def main():
-    os.makedirs("../results", exist_ok=True)
+    os.makedirs("results", exist_ok=True)
     res = {}
     res["prioritized"] = run("prioritized", seed=14)
     res["naive"] = run("naive", seed=14)
-    with open("../results/exp14_multidefect.json", "w") as f:
+    with open("results/exp14_multidefect.json", "w") as f:
         json.dump(res, f, indent=2)
     print("== multi-defect repair (2-4 simultaneous distinct-class defects) ==")
     for r in ("prioritized", "naive"):
@@ -221,7 +221,7 @@ def main():
         seq = " -> ".join(f"{s['target']}" for s in t["trace"])
         print(f"  inject {t['injected_classes']}: repair order [{seq}] "
               f"-> certified={t['certified']} in {t['iters']} iters")
-    print("\nwrote ../results/exp14_multidefect.json")
+    print("\nwrote results/exp14_multidefect.json")
 
 
 if __name__ == "__main__":

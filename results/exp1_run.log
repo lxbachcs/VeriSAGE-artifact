@@ -1,0 +1,125 @@
+=== EXP1 full stratified-100 baseline comparison START Sat Jul  4 14:43:33 +07 2026 ===
+----- model qwen2.5:7b Sat Jul  4 14:43:33 +07 2026 -----
+[qwen2.5:7b seed=1] 10/100  7s  {'direct': np.float64(50.0), 'blind_': np.float64(100.0), 'verisa': np.float64(100.0)}
+[qwen2.5:7b seed=1] 20/100  13s  {'direct': np.float64(55.0), 'blind_': np.float64(100.0), 'verisa': np.float64(100.0)}
+[qwen2.5:7b seed=1] 30/100  17s  {'direct': np.float64(66.7), 'blind_': np.float64(100.0), 'verisa': np.float64(100.0)}
+[qwen2.5:7b seed=1] 40/100  23s  {'direct': np.float64(65.0), 'blind_': np.float64(100.0), 'verisa': np.float64(100.0)}
+[qwen2.5:7b seed=1] 50/100  31s  {'direct': np.float64(60.0), 'blind_': np.float64(98.0), 'verisa': np.float64(100.0)}
+[qwen2.5:7b seed=1] 60/100  77s  {'direct': np.float64(50.0), 'blind_': np.float64(81.7), 'verisa': np.float64(83.3)}
+[qwen2.5:7b seed=1] 70/100  124s  {'direct': np.float64(42.9), 'blind_': np.float64(70.0), 'verisa': np.float64(72.9)}
+[qwen2.5:7b seed=1] 80/100  171s  {'direct': np.float64(37.5), 'blind_': np.float64(61.3), 'verisa': np.float64(65.0)}
+[qwen2.5:7b seed=1] 90/100  217s  {'direct': np.float64(33.3), 'blind_': np.float64(54.4), 'verisa': np.float64(60.0)}
+[qwen2.5:7b seed=1] 100/100  262s  {'direct': np.float64(30.0), 'blind_': np.float64(50.0), 'verisa': np.float64(56.0)}
+  seed 1 summary: {'n': 100, 'accept_first_CSR': 30.0, 'accept_first_CSR_easy': 60.0, 'accept_first_CSR_hard': 0.0, 'blind_resample_CSR': 50.0, 'blind_resample_CSR_easy': 98.0, 'blind_resample_CSR_hard': 2.0, 'verisage_CSR': 56.0, 'verisage_CSR_easy': 100.0, 'verisage_CSR_hard': 12.0, 'verisage_mean_iters': 1.6, 'accept_first_hallucinated_pct': 0.0, 'seed': 1}
+[qwen2.5:7b seed=2] 10/100  5s  {'direct': np.float64(80.0), 'blind_': np.float64(100.0), 'verisa': np.float64(100.0)}
+[qwen2.5:7b seed=2] 20/100  12s  {'direct': np.float64(70.0), 'blind_': np.float64(100.0), 'verisa': np.float64(100.0)}
+[qwen2.5:7b seed=2] 30/100  20s  {'direct': np.float64(60.0), 'blind_': np.float64(100.0), 'verisa': np.float64(100.0)}
+[qwen2.5:7b seed=2] 40/100  28s  {'direct': np.float64(57.5), 'blind_': np.float64(100.0), 'verisa': np.float64(100.0)}
+[qwen2.5:7b seed=2] 50/100  33s  {'direct': np.float64(62.0), 'blind_': np.float64(100.0), 'verisa': np.float64(100.0)}
+[qwen2.5:7b seed=2] 60/100  82s  {'direct': np.float64(51.7), 'blind_': np.float64(83.3), 'verisa': np.float64(83.3)}
+[qwen2.5:7b seed=2] 70/100  126s  {'direct': np.float64(44.3), 'blind_': np.float64(72.9), 'verisa': np.float64(75.7)}
+[qwen2.5:7b seed=2] 80/100  171s  {'direct': np.float64(38.8), 'blind_': np.float64(65.0), 'verisa': np.float64(70.0)}
+[qwen2.5:7b seed=2] 90/100  217s  {'direct': np.float64(34.4), 'blind_': np.float64(60.0), 'verisa': np.float64(65.6)}
+[qwen2.5:7b seed=2] 100/100  266s  {'direct': np.float64(31.0), 'blind_': np.float64(54.0), 'verisa': np.float64(60.0)}
+  seed 2 summary: {'n': 100, 'accept_first_CSR': 31.0, 'accept_first_CSR_easy': 62.0, 'accept_first_CSR_hard': 0.0, 'blind_resample_CSR': 54.0, 'blind_resample_CSR_easy': 100.0, 'blind_resample_CSR_hard': 8.0, 'verisage_CSR': 60.0, 'verisage_CSR_easy': 100.0, 'verisage_CSR_hard': 20.0, 'verisage_mean_iters': 1.53, 'accept_first_hallucinated_pct': 0.0, 'seed': 2}
+[qwen2.5:7b seed=3] 10/100  5s  {'direct': np.float64(80.0), 'blind_': np.float64(100.0), 'verisa': np.float64(100.0)}
+[qwen2.5:7b seed=3] 20/100  11s  {'direct': np.float64(80.0), 'blind_': np.float64(100.0), 'verisa': np.float64(100.0)}
+[qwen2.5:7b seed=3] 30/100  14s  {'direct': np.float64(86.7), 'blind_': np.float64(100.0), 'verisa': np.float64(100.0)}
+[qwen2.5:7b seed=3] 40/100  19s  {'direct': np.float64(85.0), 'blind_': np.float64(100.0), 'verisa': np.float64(100.0)}
+[qwen2.5:7b seed=3] 50/100  26s  {'direct': np.float64(80.0), 'blind_': np.float64(98.0), 'verisa': np.float64(100.0)}
+[qwen2.5:7b seed=3] 60/100  76s  {'direct': np.float64(66.7), 'blind_': np.float64(81.7), 'verisa': np.float64(83.3)}
+[qwen2.5:7b seed=3] 70/100  120s  {'direct': np.float64(58.6), 'blind_': np.float64(71.4), 'verisa': np.float64(74.3)}
+[qwen2.5:7b seed=3] 80/100  169s  {'direct': np.float64(51.2), 'blind_': np.float64(62.5), 'verisa': np.float64(66.2)}
+[qwen2.5:7b seed=3] 90/100  216s  {'direct': np.float64(45.6), 'blind_': np.float64(56.7), 'verisa': np.float64(61.1)}
+[qwen2.5:7b seed=3] 100/100  262s  {'direct': np.float64(41.0), 'blind_': np.float64(52.0), 'verisa': np.float64(58.0)}
+  seed 3 summary: {'n': 100, 'accept_first_CSR': 41.0, 'accept_first_CSR_easy': 80.0, 'accept_first_CSR_hard': 2.0, 'blind_resample_CSR': 52.0, 'blind_resample_CSR_easy': 98.0, 'blind_resample_CSR_hard': 6.0, 'verisage_CSR': 58.0, 'verisage_CSR_easy': 100.0, 'verisage_CSR_hard': 16.0, 'verisage_mean_iters': 1.46, 'accept_first_hallucinated_pct': 0.0, 'seed': 3}
+
+=== EXP1 AGGREGATE (mean +/- std over seeds) ===
+  accept-first (no verifier)       CSR=34.0+/-5.0  (easy 67.3, hard 0.7)
+  blind resample                   CSR=52.0+/-1.6  (easy 98.7, hard 5.3)
+  VeriSAGE (typed repair)          CSR=58.0+/-1.6  (easy 100.0, hard 16.0)
+  VeriSAGE mean repair iters = 1.53
+wrote ../results/exp1_baselines_qwen2.5_7b.json
+----- model qwen2.5:14b Sat Jul  4 14:56:43 +07 2026 -----
+[qwen2.5:14b seed=1] 10/100  29s  {'direct': np.float64(20.0), 'blind_': np.float64(40.0), 'verisa': np.float64(100.0)}
+[qwen2.5:14b seed=1] 20/100  36s  {'direct': np.float64(60.0), 'blind_': np.float64(70.0), 'verisa': np.float64(100.0)}
+[qwen2.5:14b seed=1] 30/100  43s  {'direct': np.float64(73.3), 'blind_': np.float64(80.0), 'verisa': np.float64(100.0)}
+[qwen2.5:14b seed=1] 40/100  50s  {'direct': np.float64(80.0), 'blind_': np.float64(85.0), 'verisa': np.float64(100.0)}
+[qwen2.5:14b seed=1] 50/100  57s  {'direct': np.float64(84.0), 'blind_': np.float64(88.0), 'verisa': np.float64(100.0)}
+[qwen2.5:14b seed=1] 60/100  149s  {'direct': np.float64(70.0), 'blind_': np.float64(73.3), 'verisa': np.float64(83.3)}
+[qwen2.5:14b seed=1] 70/100  216s  {'direct': np.float64(60.0), 'blind_': np.float64(65.7), 'verisa': np.float64(84.3)}
+[qwen2.5:14b seed=1] 80/100  278s  {'direct': np.float64(52.5), 'blind_': np.float64(60.0), 'verisa': np.float64(86.2)}
+[qwen2.5:14b seed=1] 90/100  341s  {'direct': np.float64(47.8), 'blind_': np.float64(56.7), 'verisa': np.float64(87.8)}
+[qwen2.5:14b seed=1] 100/100  412s  {'direct': np.float64(43.0), 'blind_': np.float64(52.0), 'verisa': np.float64(89.0)}
+  seed 1 summary: {'n': 100, 'accept_first_CSR': 43.0, 'accept_first_CSR_easy': 84.0, 'accept_first_CSR_hard': 2.0, 'blind_resample_CSR': 52.0, 'blind_resample_CSR_easy': 88.0, 'blind_resample_CSR_hard': 16.0, 'verisage_CSR': 89.0, 'verisage_CSR_easy': 100.0, 'verisage_CSR_hard': 78.0, 'verisage_mean_iters': 0.91, 'accept_first_hallucinated_pct': 0.0, 'seed': 1}
+[qwen2.5:14b seed=2] 10/100  34s  {'direct': np.float64(0.0), 'blind_': np.float64(20.0), 'verisa': np.float64(100.0)}
+[qwen2.5:14b seed=2] 20/100  41s  {'direct': np.float64(50.0), 'blind_': np.float64(60.0), 'verisa': np.float64(100.0)}
+[qwen2.5:14b seed=2] 30/100  48s  {'direct': np.float64(66.7), 'blind_': np.float64(73.3), 'verisa': np.float64(100.0)}
+[qwen2.5:14b seed=2] 40/100  55s  {'direct': np.float64(75.0), 'blind_': np.float64(80.0), 'verisa': np.float64(100.0)}
+[qwen2.5:14b seed=2] 50/100  62s  {'direct': np.float64(80.0), 'blind_': np.float64(84.0), 'verisa': np.float64(100.0)}
+[qwen2.5:14b seed=2] 60/100  156s  {'direct': np.float64(66.7), 'blind_': np.float64(70.0), 'verisa': np.float64(83.3)}
+[qwen2.5:14b seed=2] 70/100  221s  {'direct': np.float64(57.1), 'blind_': np.float64(64.3), 'verisa': np.float64(84.3)}
+[qwen2.5:14b seed=2] 80/100  276s  {'direct': np.float64(52.5), 'blind_': np.float64(62.5), 'verisa': np.float64(86.2)}
+[qwen2.5:14b seed=2] 90/100  343s  {'direct': np.float64(46.7), 'blind_': np.float64(60.0), 'verisa': np.float64(87.8)}
+[qwen2.5:14b seed=2] 100/100  402s  {'direct': np.float64(43.0), 'blind_': np.float64(58.0), 'verisa': np.float64(89.0)}
+  seed 2 summary: {'n': 100, 'accept_first_CSR': 43.0, 'accept_first_CSR_easy': 80.0, 'accept_first_CSR_hard': 6.0, 'blind_resample_CSR': 58.0, 'blind_resample_CSR_easy': 84.0, 'blind_resample_CSR_hard': 32.0, 'verisage_CSR': 89.0, 'verisage_CSR_easy': 100.0, 'verisage_CSR_hard': 78.0, 'verisage_mean_iters': 0.9, 'accept_first_hallucinated_pct': 0.0, 'seed': 2}
+[qwen2.5:14b seed=3] 10/100  34s  {'direct': np.float64(0.0), 'blind_': np.float64(20.0), 'verisa': np.float64(100.0)}
+[qwen2.5:14b seed=3] 20/100  45s  {'direct': np.float64(40.0), 'blind_': np.float64(60.0), 'verisa': np.float64(100.0)}
+[qwen2.5:14b seed=3] 30/100  52s  {'direct': np.float64(60.0), 'blind_': np.float64(73.3), 'verisa': np.float64(100.0)}
+[qwen2.5:14b seed=3] 40/100  60s  {'direct': np.float64(70.0), 'blind_': np.float64(80.0), 'verisa': np.float64(100.0)}
+[qwen2.5:14b seed=3] 50/100  67s  {'direct': np.float64(76.0), 'blind_': np.float64(84.0), 'verisa': np.float64(100.0)}
+[qwen2.5:14b seed=3] 60/100  162s  {'direct': np.float64(63.3), 'blind_': np.float64(70.0), 'verisa': np.float64(83.3)}
+[qwen2.5:14b seed=3] 70/100  235s  {'direct': np.float64(54.3), 'blind_': np.float64(60.0), 'verisa': np.float64(85.7)}
+[qwen2.5:14b seed=3] 80/100  305s  {'direct': np.float64(47.5), 'blind_': np.float64(53.8), 'verisa': np.float64(87.5)}
+[qwen2.5:14b seed=3] 90/100  368s  {'direct': np.float64(43.3), 'blind_': np.float64(48.9), 'verisa': np.float64(88.9)}
+[qwen2.5:14b seed=3] 100/100  432s  {'direct': np.float64(40.0), 'blind_': np.float64(47.0), 'verisa': np.float64(90.0)}
+  seed 3 summary: {'n': 100, 'accept_first_CSR': 40.0, 'accept_first_CSR_easy': 76.0, 'accept_first_CSR_hard': 4.0, 'blind_resample_CSR': 47.0, 'blind_resample_CSR_easy': 84.0, 'blind_resample_CSR_hard': 10.0, 'verisage_CSR': 90.0, 'verisage_CSR_easy': 100.0, 'verisage_CSR_hard': 80.0, 'verisage_mean_iters': 0.92, 'accept_first_hallucinated_pct': 0.0, 'seed': 3}
+
+=== EXP1 AGGREGATE (mean +/- std over seeds) ===
+  accept-first (no verifier)       CSR=42.0+/-1.4  (easy 80.0, hard 4.0)
+  blind resample                   CSR=52.3+/-4.5  (easy 85.3, hard 19.3)
+  VeriSAGE (typed repair)          CSR=89.3+/-0.5  (easy 100.0, hard 78.7)
+  VeriSAGE mean repair iters = 0.91
+wrote ../results/exp1_baselines_qwen2.5_14b.json
+----- model llama3.2:3b Sat Jul  4 15:17:31 +07 2026 -----
+[llama3.2:3b seed=1] 10/100  23s  {'direct': np.float64(0.0), 'blind_': np.float64(0.0), 'verisa': np.float64(0.0)}
+[llama3.2:3b seed=1] 20/100  45s  {'direct': np.float64(0.0), 'blind_': np.float64(0.0), 'verisa': np.float64(0.0)}
+[llama3.2:3b seed=1] 30/100  68s  {'direct': np.float64(0.0), 'blind_': np.float64(0.0), 'verisa': np.float64(0.0)}
+[llama3.2:3b seed=1] 40/100  90s  {'direct': np.float64(0.0), 'blind_': np.float64(0.0), 'verisa': np.float64(0.0)}
+[llama3.2:3b seed=1] 50/100  112s  {'direct': np.float64(0.0), 'blind_': np.float64(0.0), 'verisa': np.float64(0.0)}
+[llama3.2:3b seed=1] 60/100  145s  {'direct': np.float64(0.0), 'blind_': np.float64(0.0), 'verisa': np.float64(0.0)}
+[llama3.2:3b seed=1] 70/100  180s  {'direct': np.float64(0.0), 'blind_': np.float64(0.0), 'verisa': np.float64(0.0)}
+[llama3.2:3b seed=1] 80/100  214s  {'direct': np.float64(0.0), 'blind_': np.float64(0.0), 'verisa': np.float64(0.0)}
+[llama3.2:3b seed=1] 90/100  247s  {'direct': np.float64(0.0), 'blind_': np.float64(0.0), 'verisa': np.float64(0.0)}
+[llama3.2:3b seed=1] 100/100  280s  {'direct': np.float64(0.0), 'blind_': np.float64(0.0), 'verisa': np.float64(0.0)}
+  seed 1 summary: {'n': 100, 'accept_first_CSR': 0.0, 'accept_first_CSR_easy': 0.0, 'accept_first_CSR_hard': 0.0, 'blind_resample_CSR': 0.0, 'blind_resample_CSR_easy': 0.0, 'blind_resample_CSR_hard': 0.0, 'verisage_CSR': 0.0, 'verisage_CSR_easy': 0.0, 'verisage_CSR_hard': 0.0, 'verisage_mean_iters': 3.0, 'accept_first_hallucinated_pct': 0.0, 'seed': 1}
+[llama3.2:3b seed=2] 10/100  22s  {'direct': np.float64(0.0), 'blind_': np.float64(0.0), 'verisa': np.float64(0.0)}
+[llama3.2:3b seed=2] 20/100  44s  {'direct': np.float64(0.0), 'blind_': np.float64(0.0), 'verisa': np.float64(0.0)}
+[llama3.2:3b seed=2] 30/100  66s  {'direct': np.float64(0.0), 'blind_': np.float64(0.0), 'verisa': np.float64(0.0)}
+[llama3.2:3b seed=2] 40/100  88s  {'direct': np.float64(0.0), 'blind_': np.float64(0.0), 'verisa': np.float64(0.0)}
+[llama3.2:3b seed=2] 50/100  111s  {'direct': np.float64(0.0), 'blind_': np.float64(0.0), 'verisa': np.float64(0.0)}
+[llama3.2:3b seed=2] 60/100  145s  {'direct': np.float64(0.0), 'blind_': np.float64(0.0), 'verisa': np.float64(0.0)}
+[llama3.2:3b seed=2] 70/100  177s  {'direct': np.float64(0.0), 'blind_': np.float64(0.0), 'verisa': np.float64(0.0)}
+[llama3.2:3b seed=2] 80/100  209s  {'direct': np.float64(0.0), 'blind_': np.float64(0.0), 'verisa': np.float64(0.0)}
+[llama3.2:3b seed=2] 90/100  242s  {'direct': np.float64(0.0), 'blind_': np.float64(0.0), 'verisa': np.float64(0.0)}
+[llama3.2:3b seed=2] 100/100  276s  {'direct': np.float64(0.0), 'blind_': np.float64(0.0), 'verisa': np.float64(0.0)}
+  seed 2 summary: {'n': 100, 'accept_first_CSR': 0.0, 'accept_first_CSR_easy': 0.0, 'accept_first_CSR_hard': 0.0, 'blind_resample_CSR': 0.0, 'blind_resample_CSR_easy': 0.0, 'blind_resample_CSR_hard': 0.0, 'verisage_CSR': 0.0, 'verisage_CSR_easy': 0.0, 'verisage_CSR_hard': 0.0, 'verisage_mean_iters': 3.0, 'accept_first_hallucinated_pct': 1.0, 'seed': 2}
+[llama3.2:3b seed=3] 10/100  23s  {'direct': np.float64(0.0), 'blind_': np.float64(0.0), 'verisa': np.float64(0.0)}
+[llama3.2:3b seed=3] 20/100  45s  {'direct': np.float64(0.0), 'blind_': np.float64(0.0), 'verisa': np.float64(0.0)}
+[llama3.2:3b seed=3] 30/100  67s  {'direct': np.float64(0.0), 'blind_': np.float64(0.0), 'verisa': np.float64(0.0)}
+[llama3.2:3b seed=3] 40/100  90s  {'direct': np.float64(0.0), 'blind_': np.float64(0.0), 'verisa': np.float64(0.0)}
+[llama3.2:3b seed=3] 50/100  113s  {'direct': np.float64(0.0), 'blind_': np.float64(0.0), 'verisa': np.float64(0.0)}
+[llama3.2:3b seed=3] 60/100  145s  {'direct': np.float64(0.0), 'blind_': np.float64(0.0), 'verisa': np.float64(0.0)}
+[llama3.2:3b seed=3] 70/100  179s  {'direct': np.float64(0.0), 'blind_': np.float64(0.0), 'verisa': np.float64(0.0)}
+[llama3.2:3b seed=3] 80/100  212s  {'direct': np.float64(0.0), 'blind_': np.float64(0.0), 'verisa': np.float64(0.0)}
+[llama3.2:3b seed=3] 90/100  245s  {'direct': np.float64(0.0), 'blind_': np.float64(0.0), 'verisa': np.float64(0.0)}
+[llama3.2:3b seed=3] 100/100  278s  {'direct': np.float64(0.0), 'blind_': np.float64(0.0), 'verisa': np.float64(0.0)}
+  seed 3 summary: {'n': 100, 'accept_first_CSR': 0.0, 'accept_first_CSR_easy': 0.0, 'accept_first_CSR_hard': 0.0, 'blind_resample_CSR': 0.0, 'blind_resample_CSR_easy': 0.0, 'blind_resample_CSR_hard': 0.0, 'verisage_CSR': 0.0, 'verisage_CSR_easy': 0.0, 'verisage_CSR_hard': 0.0, 'verisage_mean_iters': 3.0, 'accept_first_hallucinated_pct': 2.0, 'seed': 3}
+
+=== EXP1 AGGREGATE (mean +/- std over seeds) ===
+  accept-first (no verifier)       CSR=0.0+/-0.0  (easy 0.0, hard 0.0)
+  blind resample                   CSR=0.0+/-0.0  (easy 0.0, hard 0.0)
+  VeriSAGE (typed repair)          CSR=0.0+/-0.0  (easy 0.0, hard 0.0)
+  VeriSAGE mean repair iters = 3.0
+wrote ../results/exp1_baselines_llama3.2_3b.json
+=== EXP1 DONE Sat Jul  4 15:31:25 +07 2026 ===

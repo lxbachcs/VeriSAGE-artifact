@@ -143,12 +143,12 @@ def run_by_difficulty(regime, T=6, seed=0):
 
 
 def main():
-    os.makedirs("../results", exist_ok=True)
+    os.makedirs("results", exist_ok=True)
     res = {}
     for regime in ("none", "nl", "typed"):
         res[regime] = run_regime(regime, seed=7)
         res[regime + "_by_difficulty"] = run_by_difficulty(regime, seed=7)
-    with open("../results/exp7_repair_ablation.json", "w") as f:
+    with open("results/exp7_repair_ablation.json", "w") as f:
         json.dump(res, f, indent=2)
     print("== repair ablation (LLM-free), budget-matched T=6 ==")
     print(f"  {'regime':<26}{'CSR%':>8}{'mean-iters':>12}")
@@ -164,7 +164,7 @@ def main():
                           ("typed", "TYPED")):
         d = res[regime + "_by_difficulty"]
         print(f"  {label:<26}{d['defects_1']:>6.0f}{d['defects_2']:>6.0f}{d['defects_3']:>6.0f}")
-    print("\nwrote ../results/exp7_repair_ablation.json")
+    print("\nwrote results/exp7_repair_ablation.json")
 
 
 if __name__ == "__main__":

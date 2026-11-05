@@ -1,0 +1,135 @@
+{
+  "gap": {
+    "uniform": [
+      {
+        "delta": 0.01,
+        "empirical_mean": 0.0,
+        "empirical_p95": 0.0,
+        "tightness_emp_over_delta": 0.0,
+        "gap_delta_minus_emp": 0.01,
+        "sound_frac": 1.0
+      },
+      {
+        "delta": 0.02,
+        "empirical_mean": 0.0,
+        "empirical_p95": 0.0,
+        "tightness_emp_over_delta": 0.0,
+        "gap_delta_minus_emp": 0.02,
+        "sound_frac": 1.0
+      },
+      {
+        "delta": 0.05,
+        "empirical_mean": 0.0,
+        "empirical_p95": 0.0,
+        "tightness_emp_over_delta": 0.0,
+        "gap_delta_minus_emp": 0.05,
+        "sound_frac": 1.0
+      },
+      {
+        "delta": 0.1,
+        "empirical_mean": 0.0,
+        "empirical_p95": 0.0,
+        "tightness_emp_over_delta": 0.0,
+        "gap_delta_minus_emp": 0.1,
+        "sound_frac": 1.0
+      },
+      {
+        "delta": 0.2,
+        "empirical_mean": 0.00024,
+        "empirical_p95": 0.00083,
+        "tightness_emp_over_delta": 0.0012,
+        "gap_delta_minus_emp": 0.19976,
+        "sound_frac": 1.0
+      },
+      {
+        "delta": 0.3,
+        "empirical_mean": 0.00184,
+        "empirical_p95": 0.00333,
+        "tightness_emp_over_delta": 0.0061,
+        "gap_delta_minus_emp": 0.29816,
+        "sound_frac": 1.0
+      }
+    ],
+    "twopoint": [
+      {
+        "delta": 0.01,
+        "empirical_mean": 0.0,
+        "empirical_p95": 0.0,
+        "tightness_emp_over_delta": 0.0,
+        "gap_delta_minus_emp": 0.01,
+        "sound_frac": 1.0
+      },
+      {
+        "delta": 0.02,
+        "empirical_mean": 0.00027,
+        "empirical_p95": 0.00217,
+        "tightness_emp_over_delta": 0.0133,
+        "gap_delta_minus_emp": 0.01973,
+        "sound_frac": 1.0
+      },
+      {
+        "delta": 0.05,
+        "empirical_mean": 0.00231,
+        "empirical_p95": 0.00801,
+        "tightness_emp_over_delta": 0.0462,
+        "gap_delta_minus_emp": 0.04769,
+        "sound_frac": 1.0
+      },
+      {
+        "delta": 0.1,
+        "empirical_mean": 0.01124,
+        "empirical_p95": 0.0315,
+        "tightness_emp_over_delta": 0.1124,
+        "gap_delta_minus_emp": 0.08876,
+        "sound_frac": 1.0
+      },
+      {
+        "delta": 0.2,
+        "empirical_mean": 0.03424,
+        "empirical_p95": 0.0635,
+        "tightness_emp_over_delta": 0.1712,
+        "gap_delta_minus_emp": 0.16576,
+        "sound_frac": 1.0
+      },
+      {
+        "delta": 0.3,
+        "empirical_mean": 0.07069,
+        "empirical_p95": 0.12667,
+        "tightness_emp_over_delta": 0.2356,
+        "gap_delta_minus_emp": 0.22931,
+        "sound_frac": 1.0
+      }
+    ]
+  },
+  "acceptance_uniform": {
+    "delta": 0.05,
+    "model": "uniform",
+    "n_plans": 8000,
+    "hoeffding_acceptance_rate": 59.08,
+    "true_feasible_rate": 88.5,
+    "conservative_rejections_pct_of_all": 29.43,
+    "false_rejection_rate_among_feasible": 33.25,
+    "budget_inflation_factor_mean": 2.571,
+    "budget_inflation_factor_median": 2.571
+  },
+  "acceptance_twopoint": {
+    "delta": 0.05,
+    "model": "twopoint",
+    "n_plans": 8000,
+    "hoeffding_acceptance_rate": 58.15,
+    "true_feasible_rate": 73.76,
+    "conservative_rejections_pct_of_all": 15.61,
+    "false_rejection_rate_among_feasible": 21.17,
+    "budget_inflation_factor_mean": 1.467,
+    "budget_inflation_factor_median": 1.481
+  },
+  "repair_uniform": {
+    "delta": 0.05,
+    "model": "uniform",
+    "n_tasks": 3000,
+    "mean_iters_hoeffding": 2.611,
+    "mean_iters_oracle": 0.455,
+    "extra_iters_pct": 96.53,
+    "hoeffding_could_not_satisfy_pct": 0.0
+  }
+}

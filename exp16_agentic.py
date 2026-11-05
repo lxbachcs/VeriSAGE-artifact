@@ -167,7 +167,7 @@ def main():
     seeds = [int(x) for x in (sys.argv[2].split(",") if len(sys.argv) > 2 else ["1", "2", "3"])]
     T = int(sys.argv[3]) if len(sys.argv) > 3 else 4
     n_per = int(sys.argv[4]) if len(sys.argv) > 4 else 10
-    os.makedirs("../results/raw", exist_ok=True)
+    os.makedirs("results/raw", exist_ok=True)
     per_seed, all_recs = [], []
     for sd in seeds:
         recs = run_suite(model, sd, T, n_per); all_recs += recs
@@ -183,9 +183,9 @@ def main():
            "methods": METHODS, "per_seed": per_seed,
            "aggregate": {f: agg(f) for f in fields}}
     tag = model.replace(":", "_").replace("/", "_")
-    with open(f"../results/exp16_agentic_{tag}.json", "w") as f:
+    with open(f"results/exp16_agentic_{tag}.json", "w") as f:
         json.dump(out, f, indent=2)
-    with open(f"../results/raw/exp16_{tag}.jsonl", "w") as f:
+    with open(f"results/raw/exp16_{tag}.jsonl", "w") as f:
         for r in all_recs:
             f.write(json.dumps(r) + "\n")
     print("\n=== EXP16 AGENTIC BASELINES (mean over seeds) ===")
@@ -194,7 +194,7 @@ def main():
         print(f"  {m:14s} CSR={a['mean']:5.1f}±{a['std']:.1f}  "
               f"(easy {out['aggregate'][m+'_CSR_easy']['mean']:.1f}, "
               f"hard {out['aggregate'][m+'_CSR_hard']['mean']:.1f})")
-    print(f"wrote ../results/exp16_agentic_{tag}.json")
+    print(f"wrote results/exp16_agentic_{tag}.json")
 
 
 if __name__ == "__main__":

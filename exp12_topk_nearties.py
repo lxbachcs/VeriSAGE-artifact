@@ -135,9 +135,9 @@ def sweep(delta=0.05, n_paths=8, path_len=6, n_mc=40000):
 
 
 def main():
-    os.makedirs("../results", exist_ok=True)
+    os.makedirs("results", exist_ok=True)
     res = sweep()
-    with open("../results/exp12_topk_nearties.json", "w") as f:
+    with open("results/exp12_topk_nearties.json", "w") as f:
         json.dump(res, f, indent=2)
     print("== top-k path-union sensitivity to near-tying means (delta=0.05) ==")
     print(f"  {'gap':>5} | " + " ".join(f"k={k}(sound/cons)" for k in (1, 2, 4, res['n_paths']))
@@ -146,7 +146,7 @@ def main():
         cells = " ".join(f"{p['sound']!s:>5}/{p['conservatism_x']:<4}" for p in r["per_k"])
         print(f"  {r['mean_gap']:>5} | {cells} | k*={r['criterion_k']} "
               f"{r['criterion_sound']!s}({r['criterion_conservatism_x']}x)")
-    print("\nwrote ../results/exp12_topk_nearties.json")
+    print("\nwrote results/exp12_topk_nearties.json")
 
 
 if __name__ == "__main__":

@@ -26,7 +26,7 @@ from __future__ import annotations
 import json, os
 import numpy as np
 
-E3 = "../results/exp3_scalability.json"
+E3 = "results/exp3_scalability.json"
 
 
 def _structural_nonc2_us_per_service(e3):
@@ -98,9 +98,9 @@ def endtoend(ks=(6, 13, 25, 50, 100), seed=51):
 
 
 def main():
-    os.makedirs("../results", exist_ok=True)
+    os.makedirs("results", exist_ok=True)
     res = endtoend()
-    with open("../results/exp8_endtoend.json", "w") as f:
+    with open("results/exp8_endtoend.json", "w") as f:
         json.dump(res, f, indent=2)
     print(f"structural nonC2 = {res['structural_nonC2_us_per_service']} us/service")
     print(f"SMT source: {res['sources']['smt_c2']}")
@@ -113,7 +113,7 @@ def main():
                   f"{g['light']['p50_ms']:.2f}/{g['light']['p95_ms']:.2f} | "
                   f"{g['mixed']['p50_ms']:.2f}/{g['mixed']['p95_ms']:.2f} | "
                   f"{g['heavy']['p50_ms']:.2f}/{g['heavy']['p95_ms']:.2f}")
-    print("\nwrote ../results/exp8_endtoend.json")
+    print("\nwrote results/exp8_endtoend.json")
 
 
 if __name__ == "__main__":

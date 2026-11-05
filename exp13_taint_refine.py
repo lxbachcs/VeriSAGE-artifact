@@ -144,12 +144,12 @@ def c4_fp_rate(mode, n_plans=20000, seed=62):
 
 
 def main():
-    os.makedirs("../results", exist_ok=True)
+    os.makedirs("results", exist_ok=True)
     res = {}
     res["edge_precision"] = edge_precision_sweep()
     res["c4_false_positive_pct"] = {
         m: c4_fp_rate(m) for m in ("opaque", "static", "static_dynamic")}
-    with open("../results/exp13_taint_refine.json", "w") as f:
+    with open("results/exp13_taint_refine.json", "w") as f:
         json.dump(res, f, indent=2)
     print("== (1) edge precision/recall of taint refinements (true dep known) ==")
     for m, d in res["edge_precision"].items():
@@ -157,7 +157,7 @@ def main():
     print("== (2) plan-level C4 false-positive rate ==")
     for m, v in res["c4_false_positive_pct"].items():
         print(f"  {m:<16} C4-FP={v:.1f}%")
-    print("\nwrote ../results/exp13_taint_refine.json")
+    print("\nwrote results/exp13_taint_refine.json")
 
 
 if __name__ == "__main__":

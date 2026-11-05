@@ -15,7 +15,7 @@ import os
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-RES = os.path.join(HERE, "..", "results")
+RES = os.path.join(HERE, "results")
 
 _fails = 0
 
@@ -253,6 +253,43 @@ def main():
           and approx(ah["slack_ratio_robust_over_hoeff_max"], 1.452, 0.05),
           (ah["slack_ratio_robust_over_hoeff_min"], ah["slack_ratio_robust_over_hoeff_max"]),
           ("~0.81", "~1.45"))
+
+    # ---- RPE v1.1 additions: hard-task ladder (Table 4b), timing, tightness ----
+    ladder = {  # planner -> (single-shot, blind, VeriSAGE) CSR % on the hard task
+        "gemma2_9b": (15, 65, 100), "qwen2.5_7b": (0, 20, 30), "qwen2.5_14b": (0, 0, 90),
+        "qwen2.5_72b": (0, 40, 85), "qwen2.5-coder_7b": (5, 20, 20), "llama3.2_3b": (0, 0, 0),
+        "llama3.1_8b": (0, 55, 25), "llama3.3_70b": (100, 100, 100), "gpt-4o-mini": (65, 100, 85),
+    }
+    for tag, want in ladder.items():
+        d = load(f"llm_summary_{tag}_hard.json")
+        got = (d["single_shot_CSR"], d["blind_CSR"], d["verisage_CSR"])
+        check(f"v1.1 Table 4(b) hard ladder {tag} single/blind/VeriSAGE",
+              all(approx(g, w, 0.5) for g, w in zip(got, want)), got, want)
+    check("v1.1 structural verification ~0.27 us/service (exp3.scal_k.linfit_slope)",
+          approx(sk["linfit_slope_us_per_service"], 0.27, 0.01),
+          sk["linfit_slope_us_per_service"], "~0.27")
+    e8 = load("exp8_endtoend.json")
+    p50 = {r["k"]: (r["regimes"]["light"]["p50_ms"], r["regimes"]["heavy"]["p50_ms"]) for r in e8["by_k"]}
+    check("v1.1 end-to-end p50: 13 services 4.3-9.1 ms, 100 services 33-70 ms (exp8)",
+          approx(p50[13][0], 4.3, 0.05) and approx(p50[13][1], 9.1, 0.05)
+          and approx(p50[100][0], 32.7, 0.5) and approx(p50[100][1], 69.9, 0.5),
+          (p50[13], p50[100]), "((4.3, 9.1), (~33, ~70))")
+    acc = tight["acceptance_uniform"]
+    check("v1.1 SLA tightness: 88.5% feasible, 59.1% admitted (exp2)",
+          approx(acc["true_feasible_rate"], 88.5, 0.05) and approx(acc["hoeffding_acceptance_rate"], 59.1, 0.05),
+          (acc["true_feasible_rate"], acc["hoeffding_acceptance_rate"]), (88.5, 59.1))
+    e7 = load("exp7_repair_ablation.json")
+    check("v1.1 typed 100% (2.2 rounds) vs check-list 75.9% (3.4) vs none 0% (exp7)",
+          approx(e7["typed"]["CSR_pct"], 100, 0.01) and approx(e7["typed"]["mean_iters_to_certify"], 2.2, 0.05)
+          and approx(e7["nl"]["CSR_pct"], 75.9, 0.05) and approx(e7["nl"]["mean_iters_to_certify"], 3.4, 0.05)
+          and approx(e7["none"]["CSR_pct"], 0, 0.01),
+          (e7["typed"]["CSR_pct"], e7["nl"]["CSR_pct"], e7["none"]["CSR_pct"]), (100, 75.9, 0))
+    e14 = load("exp14_multidefect.json")
+    check("v1.1 multi-defect: priority 39.4% vs naive 14.0%, 3896 re-entries (exp14)",
+          approx(e14["prioritized"]["CSR_pct"], 39.4, 0.05) and approx(e14["naive"]["CSR_pct"], 14.0, 0.05)
+          and e14["naive"]["oscillation_events"] == 3896,
+          (e14["prioritized"]["CSR_pct"], e14["naive"]["CSR_pct"], e14["naive"]["oscillation_events"]),
+          (39.4, 14.0, 3896))
 
     print("-" * 60)
     if _fails == 0:

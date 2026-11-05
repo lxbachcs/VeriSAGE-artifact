@@ -1,0 +1,130 @@
+{
+  "model": "gpt-4o-mini",
+  "seeds": [
+    1
+  ],
+  "T": 4,
+  "n_tasks": 100,
+  "methods": [
+    "accept_first",
+    "blind",
+    "best_of_n",
+    "self_refine",
+    "critic",
+    "lats",
+    "verisage"
+  ],
+  "per_seed": [
+    {
+      "n": 100,
+      "accept_first_CSR": 70.0,
+      "accept_first_CSR_easy": 100.0,
+      "accept_first_CSR_hard": 40.0,
+      "blind_CSR": 86.0,
+      "blind_CSR_easy": 100.0,
+      "blind_CSR_hard": 72.0,
+      "best_of_n_CSR": 70.0,
+      "best_of_n_CSR_easy": 100.0,
+      "best_of_n_CSR_hard": 40.0,
+      "self_refine_CSR": 29.0,
+      "self_refine_CSR_easy": 36.0,
+      "self_refine_CSR_hard": 22.0,
+      "critic_CSR": 70.0,
+      "critic_CSR_easy": 100.0,
+      "critic_CSR_hard": 40.0,
+      "lats_CSR": 69.0,
+      "lats_CSR_easy": 94.0,
+      "lats_CSR_hard": 44.0,
+      "verisage_CSR": 87.0,
+      "verisage_CSR_easy": 100.0,
+      "verisage_CSR_hard": 74.0,
+      "seed": 1
+    }
+  ],
+  "aggregate": {
+    "accept_first_CSR": {
+      "mean": 70.0,
+      "std": 0.0
+    },
+    "accept_first_CSR_easy": {
+      "mean": 100.0,
+      "std": 0.0
+    },
+    "accept_first_CSR_hard": {
+      "mean": 40.0,
+      "std": 0.0
+    },
+    "blind_CSR": {
+      "mean": 86.0,
+      "std": 0.0
+    },
+    "blind_CSR_easy": {
+      "mean": 100.0,
+      "std": 0.0
+    },
+    "blind_CSR_hard": {
+      "mean": 72.0,
+      "std": 0.0
+    },
+    "best_of_n_CSR": {
+      "mean": 70.0,
+      "std": 0.0
+    },
+    "best_of_n_CSR_easy": {
+      "mean": 100.0,
+      "std": 0.0
+    },
+    "best_of_n_CSR_hard": {
+      "mean": 40.0,
+      "std": 0.0
+    },
+    "self_refine_CSR": {
+      "mean": 29.0,
+      "std": 0.0
+    },
+    "self_refine_CSR_easy": {
+      "mean": 36.0,
+      "std": 0.0
+    },
+    "self_refine_CSR_hard": {
+      "mean": 22.0,
+      "std": 0.0
+    },
+    "critic_CSR": {
+      "mean": 70.0,
+      "std": 0.0
+    },
+    "critic_CSR_easy": {
+      "mean": 100.0,
+      "std": 0.0
+    },
+    "critic_CSR_hard": {
+      "mean": 40.0,
+      "std": 0.0
+    },
+    "lats_CSR": {
+      "mean": 69.0,
+      "std": 0.0
+    },
+    "lats_CSR_easy": {
+      "mean": 94.0,
+      "std": 0.0
+    },
+    "lats_CSR_hard": {
+      "mean": 44.0,
+      "std": 0.0
+    },
+    "verisage_CSR": {
+      "mean": 87.0,
+      "std": 0.0
+    },
+    "verisage_CSR_easy": {
+      "mean": 100.0,
+      "std": 0.0
+    },
+    "verisage_CSR_hard": {
+      "mean": 74.0,
+      "std": 0.0
+    }
+  }
+}

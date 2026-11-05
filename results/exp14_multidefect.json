@@ -1,0 +1,720 @@
+{
+  "prioritized": {
+    "regime": "prioritized",
+    "n_tasks": 700,
+    "T": 8,
+    "CSR_pct": 39.43,
+    "mean_iters": 3.525,
+    "oscillation_events": 0,
+    "sample_traces": [
+      {
+        "injected_classes": [
+          "C2",
+          "C5sla",
+          "C3",
+          "C5pol"
+        ],
+        "certified": true,
+        "iters": 5,
+        "trace": [
+          {
+            "iter": 0,
+            "classes_present": [
+              "C1",
+              "C2",
+              "C3",
+              "C5pol",
+              "C5sla"
+            ],
+            "target": "C1"
+          },
+          {
+            "iter": 1,
+            "classes_present": [
+              "C1",
+              "C2",
+              "C3",
+              "C5pol",
+              "C5sla"
+            ],
+            "target": "C2"
+          },
+          {
+            "iter": 2,
+            "classes_present": [
+              "C1",
+              "C2",
+              "C3",
+              "C5pol",
+              "C5sla"
+            ],
+            "target": "C3"
+          },
+          {
+            "iter": 3,
+            "classes_present": [
+              "C5pol",
+              "C5sla"
+            ],
+            "target": "C5pol"
+          },
+          {
+            "iter": 4,
+            "classes_present": [
+              "C5sla"
+            ],
+            "target": "C5sla"
+          }
+        ]
+      },
+      {
+        "injected_classes": [
+          "C3",
+          "C4",
+          "C5sla"
+        ],
+        "certified": false,
+        "iters": 8,
+        "trace": [
+          {
+            "iter": 0,
+            "classes_present": [
+              "C1",
+              "C2",
+              "C3",
+              "C4",
+              "C5sla"
+            ],
+            "target": "C1"
+          },
+          {
+            "iter": 1,
+            "classes_present": [
+              "C1",
+              "C2",
+              "C3",
+              "C4",
+              "C5sla"
+            ],
+            "target": "C2"
+          },
+          {
+            "iter": 2,
+            "classes_present": [
+              "C1",
+              "C2",
+              "C3",
+              "C4",
+              "C5sla"
+            ],
+            "target": "C3"
+          },
+          {
+            "iter": 3,
+            "classes_present": [
+              "C4",
+              "C5sla"
+            ],
+            "target": "C4"
+          },
+          {
+            "iter": 4,
+            "classes_present": [
+              "C1",
+              "C5sla"
+            ],
+            "target": "C5sla"
+          },
+          {
+            "iter": 5,
+            "classes_present": [
+              "C1",
+              "C5sla"
+            ],
+            "target": "C5sla"
+          },
+          {
+            "iter": 6,
+            "classes_present": [
+              "C1"
+            ],
+            "target": "C1"
+          },
+          {
+            "iter": 7,
+            "classes_present": [
+              "C1"
+            ],
+            "target": "C1"
+          }
+        ]
+      },
+      {
+        "injected_classes": [
+          "C3",
+          "C4",
+          "C5pol",
+          "C5sla"
+        ],
+        "certified": false,
+        "iters": 8,
+        "trace": [
+          {
+            "iter": 0,
+            "classes_present": [
+              "C1",
+              "C2",
+              "C3",
+              "C4",
+              "C5pol",
+              "C5sla"
+            ],
+            "target": "C1"
+          },
+          {
+            "iter": 1,
+            "classes_present": [
+              "C1",
+              "C2",
+              "C3",
+              "C4",
+              "C5pol",
+              "C5sla"
+            ],
+            "target": "C2"
+          },
+          {
+            "iter": 2,
+            "classes_present": [
+              "C1",
+              "C2",
+              "C3",
+              "C4",
+              "C5pol",
+              "C5sla"
+            ],
+            "target": "C3"
+          },
+          {
+            "iter": 3,
+            "classes_present": [
+              "C4",
+              "C5pol",
+              "C5sla"
+            ],
+            "target": "C4"
+          },
+          {
+            "iter": 4,
+            "classes_present": [
+              "C1",
+              "C5pol",
+              "C5sla"
+            ],
+            "target": "C5pol"
+          },
+          {
+            "iter": 5,
+            "classes_present": [
+              "C1",
+              "C5sla"
+            ],
+            "target": "C5sla"
+          },
+          {
+            "iter": 6,
+            "classes_present": [
+              "C1",
+              "C5sla"
+            ],
+            "target": "C5sla"
+          },
+          {
+            "iter": 7,
+            "classes_present": [
+              "C1"
+            ],
+            "target": "C1"
+          }
+        ]
+      },
+      {
+        "injected_classes": [
+          "C3",
+          "C5pol",
+          "C2",
+          "C5sla"
+        ],
+        "certified": true,
+        "iters": 5,
+        "trace": [
+          {
+            "iter": 0,
+            "classes_present": [
+              "C1",
+              "C2",
+              "C3",
+              "C5pol",
+              "C5sla"
+            ],
+            "target": "C1"
+          },
+          {
+            "iter": 1,
+            "classes_present": [
+              "C1",
+              "C2",
+              "C3",
+              "C5pol",
+              "C5sla"
+            ],
+            "target": "C2"
+          },
+          {
+            "iter": 2,
+            "classes_present": [
+              "C1",
+              "C2",
+              "C3",
+              "C5pol",
+              "C5sla"
+            ],
+            "target": "C3"
+          },
+          {
+            "iter": 3,
+            "classes_present": [
+              "C5pol",
+              "C5sla"
+            ],
+            "target": "C5pol"
+          },
+          {
+            "iter": 4,
+            "classes_present": [
+              "C5sla"
+            ],
+            "target": "C5sla"
+          }
+        ]
+      }
+    ]
+  },
+  "naive": {
+    "regime": "naive",
+    "n_tasks": 700,
+    "T": 8,
+    "CSR_pct": 14.0,
+    "mean_iters": 2.194,
+    "oscillation_events": 3896,
+    "sample_traces": [
+      {
+        "injected_classes": [
+          "C2",
+          "C5sla",
+          "C3",
+          "C5pol"
+        ],
+        "certified": false,
+        "iters": 8,
+        "trace": [
+          {
+            "iter": 0,
+            "classes_present": [
+              "C1",
+              "C2",
+              "C3",
+              "C5pol",
+              "C5sla"
+            ],
+            "target": "C1"
+          },
+          {
+            "iter": 1,
+            "classes_present": [
+              "C1",
+              "C2",
+              "C3",
+              "C5pol",
+              "C5sla"
+            ],
+            "target": "C1"
+          },
+          {
+            "iter": 2,
+            "classes_present": [
+              "C1",
+              "C2",
+              "C3",
+              "C5pol",
+              "C5sla"
+            ],
+            "target": "C1"
+          },
+          {
+            "iter": 3,
+            "classes_present": [
+              "C1",
+              "C2",
+              "C3",
+              "C5pol",
+              "C5sla"
+            ],
+            "target": "C1"
+          },
+          {
+            "iter": 4,
+            "classes_present": [
+              "C1",
+              "C2",
+              "C3",
+              "C5pol",
+              "C5sla"
+            ],
+            "target": "C1"
+          },
+          {
+            "iter": 5,
+            "classes_present": [
+              "C1",
+              "C2",
+              "C3",
+              "C5pol",
+              "C5sla"
+            ],
+            "target": "C1"
+          },
+          {
+            "iter": 6,
+            "classes_present": [
+              "C1",
+              "C2",
+              "C3",
+              "C5pol",
+              "C5sla"
+            ],
+            "target": "C1"
+          },
+          {
+            "iter": 7,
+            "classes_present": [
+              "C1",
+              "C2",
+              "C3",
+              "C5pol",
+              "C5sla"
+            ],
+            "target": "C1"
+          }
+        ]
+      },
+      {
+        "injected_classes": [
+          "C3",
+          "C4",
+          "C5sla"
+        ],
+        "certified": false,
+        "iters": 8,
+        "trace": [
+          {
+            "iter": 0,
+            "classes_present": [
+              "C1",
+              "C2",
+              "C3",
+              "C4",
+              "C5sla"
+            ],
+            "target": "C1"
+          },
+          {
+            "iter": 1,
+            "classes_present": [
+              "C1",
+              "C2",
+              "C3",
+              "C4",
+              "C5sla"
+            ],
+            "target": "C1"
+          },
+          {
+            "iter": 2,
+            "classes_present": [
+              "C1",
+              "C2",
+              "C3",
+              "C4",
+              "C5sla"
+            ],
+            "target": "C1"
+          },
+          {
+            "iter": 3,
+            "classes_present": [
+              "C1",
+              "C2",
+              "C3",
+              "C4",
+              "C5sla"
+            ],
+            "target": "C1"
+          },
+          {
+            "iter": 4,
+            "classes_present": [
+              "C1",
+              "C2",
+              "C3",
+              "C4",
+              "C5sla"
+            ],
+            "target": "C1"
+          },
+          {
+            "iter": 5,
+            "classes_present": [
+              "C1",
+              "C2",
+              "C3",
+              "C4",
+              "C5sla"
+            ],
+            "target": "C1"
+          },
+          {
+            "iter": 6,
+            "classes_present": [
+              "C1",
+              "C2",
+              "C3",
+              "C4",
+              "C5sla"
+            ],
+            "target": "C1"
+          },
+          {
+            "iter": 7,
+            "classes_present": [
+              "C1",
+              "C2",
+              "C3",
+              "C4",
+              "C5sla"
+            ],
+            "target": "C1"
+          }
+        ]
+      },
+      {
+        "injected_classes": [
+          "C3",
+          "C4",
+          "C5pol",
+          "C5sla"
+        ],
+        "certified": false,
+        "iters": 8,
+        "trace": [
+          {
+            "iter": 0,
+            "classes_present": [
+              "C1",
+              "C2",
+              "C3",
+              "C4",
+              "C5pol",
+              "C5sla"
+            ],
+            "target": "C1"
+          },
+          {
+            "iter": 1,
+            "classes_present": [
+              "C1",
+              "C2",
+              "C3",
+              "C4",
+              "C5pol",
+              "C5sla"
+            ],
+            "target": "C1"
+          },
+          {
+            "iter": 2,
+            "classes_present": [
+              "C1",
+              "C2",
+              "C3",
+              "C4",
+              "C5pol",
+              "C5sla"
+            ],
+            "target": "C1"
+          },
+          {
+            "iter": 3,
+            "classes_present": [
+              "C1",
+              "C2",
+              "C3",
+              "C4",
+              "C5pol",
+              "C5sla"
+            ],
+            "target": "C1"
+          },
+          {
+            "iter": 4,
+            "classes_present": [
+              "C1",
+              "C2",
+              "C3",
+              "C4",
+              "C5pol",
+              "C5sla"
+            ],
+            "target": "C1"
+          },
+          {
+            "iter": 5,
+            "classes_present": [
+              "C1",
+              "C2",
+              "C3",
+              "C4",
+              "C5pol",
+              "C5sla"
+            ],
+            "target": "C1"
+          },
+          {
+            "iter": 6,
+            "classes_present": [
+              "C1",
+              "C2",
+              "C3",
+              "C4",
+              "C5pol",
+              "C5sla"
+            ],
+            "target": "C1"
+          },
+          {
+            "iter": 7,
+            "classes_present": [
+              "C1",
+              "C2",
+              "C3",
+              "C4",
+              "C5pol",
+              "C5sla"
+            ],
+            "target": "C1"
+          }
+        ]
+      },
+      {
+        "injected_classes": [
+          "C3",
+          "C5pol",
+          "C2",
+          "C5sla"
+        ],
+        "certified": false,
+        "iters": 8,
+        "trace": [
+          {
+            "iter": 0,
+            "classes_present": [
+              "C1",
+              "C2",
+              "C3",
+              "C5pol",
+              "C5sla"
+            ],
+            "target": "C1"
+          },
+          {
+            "iter": 1,
+            "classes_present": [
+              "C1",
+              "C2",
+              "C3",
+              "C5pol",
+              "C5sla"
+            ],
+            "target": "C1"
+          },
+          {
+            "iter": 2,
+            "classes_present": [
+              "C1",
+              "C2",
+              "C3",
+              "C5pol",
+              "C5sla"
+            ],
+            "target": "C1"
+          },
+          {
+            "iter": 3,
+            "classes_present": [
+              "C1",
+              "C2",
+              "C3",
+              "C5pol",
+              "C5sla"
+            ],
+            "target": "C1"
+          },
+          {
+            "iter": 4,
+            "classes_present": [
+              "C1",
+              "C2",
+              "C3",
+              "C5pol",
+              "C5sla"
+            ],
+            "target": "C1"
+          },
+          {
+            "iter": 5,
+            "classes_present": [
+              "C1",
+              "C2",
+              "C3",
+              "C5pol",
+              "C5sla"
+            ],
+            "target": "C1"
+          },
+          {
+            "iter": 6,
+            "classes_present": [
+              "C1",
+              "C2",
+              "C3",
+              "C5pol",
+              "C5sla"
+            ],
+            "target": "C1"
+          },
+          {
+            "iter": 7,
+            "classes_present": [
+              "C1",
+              "C2",
+              "C3",
+              "C5pol",
+              "C5sla"
+            ],
+            "target": "C1"
+          }
+        ]
+      }
+    ]
+  }
+}

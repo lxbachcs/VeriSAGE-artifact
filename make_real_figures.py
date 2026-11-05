@@ -3,7 +3,7 @@ Generate the manuscript's Fig 3 (SLA-bound soundness) and Fig 4 (scalability +
 repair convergence) from REAL measured results in results/core_results.json.
 Writes into manuscript/figures/ (overwriting the illustrative versions).
 """
-import json
+import json, os
 import numpy as np
 import matplotlib as mpl
 import matplotlib.pyplot as plt
@@ -17,8 +17,9 @@ mpl.rcParams.update({
 C = {"blue": "#0072B2", "orange": "#E69F00", "green": "#009E73",
      "red": "#D55E00", "purple": "#CC79A7", "gray": "#7A7A7A"}
 
-R = json.load(open("../results/core_results.json"))
-FIG = "../manuscript/figures"
+R = json.load(open("results/core_results.json"))
+FIG = "figures"
+os.makedirs(FIG, exist_ok=True)
 
 # ---------------- Fig 3: SLA-bound soundness (real) ----------------
 cur = R["e2_sla_calibration"]["curve"]
@@ -46,7 +47,7 @@ plt.close(fig)
 # ---------------- Fig 4: scalability + repair (real) ----------------
 # Panel (a) now uses the EXP3 stress test: DAG size k up to 200 (measured
 # wall-clock, microseconds), replacing the old length 2-12 sweep.
-E3 = json.load(open("../results/exp3_scalability.json"))
+E3 = json.load(open("results/exp3_scalability.json"))
 sc = E3["scal_k"]["fine"]
 L = np.array([s["k"] for s in sc])
 ms = np.array([s["us_mean"] for s in sc])         # already microseconds
@@ -112,7 +113,7 @@ plt.close(fig)
 # function of latency concentration (variance fraction rho). Measured in
 # results/exp4_bernstein.json.
 try:
-    E4 = json.load(open("../results/exp4_bernstein.json"))
+    E4 = json.load(open("results/exp4_bernstein.json"))
     cur4 = E4["slack_by_concentration"]["curve"]
     rho = np.array([c["rho_variance_fraction"] for c in cur4])
     ratio = np.array([c["ratio_hoeff_over_bennett"] for c in cur4])

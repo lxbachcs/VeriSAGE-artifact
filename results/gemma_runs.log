@@ -1,0 +1,32 @@
+=== gemma2:9b EASY ===
+[gemma2:9b] 10/30  9s  {'direct_certified': np.float64(80.0), 'single_shot_certified': np.float64(80.0), 'blind_certified': np.float64(100.0), 'verisage_certified': np.float64(90.0)}
+[gemma2:9b] 20/30  14s  {'direct_certified': np.float64(90.0), 'single_shot_certified': np.float64(90.0), 'blind_certified': np.float64(100.0), 'verisage_certified': np.float64(95.0)}
+[gemma2:9b] 30/30  21s  {'direct_certified': np.float64(90.0), 'single_shot_certified': np.float64(90.0), 'blind_certified': np.float64(100.0), 'verisage_certified': np.float64(96.7)}
+  "direct_CSR": 90.0,
+  "single_shot_CSR": 90.0,
+  "blind_CSR": 100.0,
+  "verisage_CSR": 96.66666666666667,
+  "direct_SV": 90.0,
+  "verisage_mean_iters": 0.16666666666666666,
+=== gemma2:9b EXP1 stratified-100 (seeds 1,2,3 T=4) ===
+[gemma2:9b seed=2] 100/100  322s  {'direct': np.float64(37.0), 'blind_': np.float64(62.0), 'verisa': np.float64(82.0)}
+  seed 2 summary: {'n': 100, 'accept_first_CSR': 37.0, 'accept_first_CSR_easy': 62.0, 'accept_first_CSR_hard': 12.0, 'blind_resample_CSR': 62.0, 'blind_resample_CSR_easy': 80.0, 'blind_resample_CSR_hard': 44.0, 'verisage_CSR': 82.0, 'verisage_CSR_easy': 86.0, 'verisage_CSR_hard': 78.0, 'verisage_mean_iters': 1.1, 'accept_first_hallucinated_pct': 0.0, 'seed': 2}
+[gemma2:9b seed=3] 10/100  40s  {'direct': np.float64(0.0), 'blind_': np.float64(0.0), 'verisa': np.float64(40.0)}
+[gemma2:9b seed=3] 20/100  45s  {'direct': np.float64(50.0), 'blind_': np.float64(50.0), 'verisa': np.float64(70.0)}
+[gemma2:9b seed=3] 30/100  53s  {'direct': np.float64(63.3), 'blind_': np.float64(66.7), 'verisa': np.float64(80.0)}
+[gemma2:9b seed=3] 40/100  60s  {'direct': np.float64(70.0), 'blind_': np.float64(75.0), 'verisa': np.float64(85.0)}
+[gemma2:9b seed=3] 50/100  69s  {'direct': np.float64(72.0), 'blind_': np.float64(80.0), 'verisa': np.float64(86.0)}
+[gemma2:9b seed=3] 60/100  146s  {'direct': np.float64(60.0), 'blind_': np.float64(66.7), 'verisa': np.float64(71.7)}
+[gemma2:9b seed=3] 70/100  185s  {'direct': np.float64(55.7), 'blind_': np.float64(65.7), 'verisa': np.float64(74.3)}
+[gemma2:9b seed=3] 80/100  222s  {'direct': np.float64(52.5), 'blind_': np.float64(62.5), 'verisa': np.float64(77.5)}
+[gemma2:9b seed=3] 90/100  263s  {'direct': np.float64(48.9), 'blind_': np.float64(60.0), 'verisa': np.float64(80.0)}
+[gemma2:9b seed=3] 100/100  304s  {'direct': np.float64(46.0), 'blind_': np.float64(57.0), 'verisa': np.float64(82.0)}
+  seed 3 summary: {'n': 100, 'accept_first_CSR': 46.0, 'accept_first_CSR_easy': 72.0, 'accept_first_CSR_hard': 20.0, 'blind_resample_CSR': 57.0, 'blind_resample_CSR_easy': 80.0, 'blind_resample_CSR_hard': 34.0, 'verisage_CSR': 82.0, 'verisage_CSR_easy': 86.0, 'verisage_CSR_hard': 78.0, 'verisage_mean_iters': 0.95, 'accept_first_hallucinated_pct': 0.0, 'seed': 3}
+
+=== EXP1 AGGREGATE (mean +/- std over seeds) ===
+  accept-first (no verifier)       CSR=41.3+/-3.7  (easy 66.7, hard 16.0)
+  blind resample                   CSR=60.3+/-2.4  (easy 80.0, hard 40.7)
+  VeriSAGE (typed repair)          CSR=82.3+/-0.5  (easy 86.7, hard 78.0)
+  VeriSAGE mean repair iters = 1.03
+wrote ../results/exp1_baselines_gemma2_9b.json
+EXP1DONE

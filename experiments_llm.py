@@ -130,12 +130,12 @@ def main():
         "wall_s": round(time.time() - t0, 1),
     }
     import os
-    os.makedirs("../results/raw", exist_ok=True)
+    os.makedirs("results/raw", exist_ok=True)
     tag = model.replace(':', '_').replace('/', '_') + ("" if suite == "easy" else f"_{suite}")
-    with open(f"../results/raw/llm_{tag}.jsonl", "w") as f:
+    with open(f"results/raw/llm_{tag}.jsonl", "w") as f:
         for r in recs:
             f.write(json.dumps(r) + "\n")
-    with open(f"../results/llm_summary_{tag}.json", "w") as f:
+    with open(f"results/llm_summary_{tag}.json", "w") as f:
         json.dump(out, f, indent=2)
     print("\n=== SUMMARY ===")
     print(json.dumps(out, indent=2))

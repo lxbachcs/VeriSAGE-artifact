@@ -264,7 +264,7 @@ def admission_hit_qws(delta=0.05, n_mc=20000, seed=51):
 
 
 def main():
-    os.makedirs("../results", exist_ok=True)
+    os.makedirs("results", exist_ok=True)
     res = {}
     res["conservatism"] = conservatism_curve()
     res["soundness_under_correlation"] = soundness_under_correlation()
@@ -273,7 +273,7 @@ def main():
         independence_violation_scan(build_catalogue(), "payment"),
         independence_violation_scan(build_catalogue_hard(), "regulated"),
     ]
-    with open("../results/exp11_correlation.json", "w") as f:
+    with open("results/exp11_correlation.json", "w") as f:
         json.dump(res, f, indent=2)
 
     print("== (A) added conservatism of correlation-robust bounds vs Hoeffding ==")
@@ -302,7 +302,7 @@ def main():
           f"(worst true violation {100*d['hoeffding_worst_true_violation']:.1f}% vs delta 5%; "
           f"support-anchored bound stays sound on real data)")
     print(f"  robust certificate safe under ALL correlation  = {d['robust_safe_under_all_correlation']}")
-    print("\nwrote ../results/exp11_correlation.json")
+    print("\nwrote results/exp11_correlation.json")
 
 
 if __name__ == "__main__":

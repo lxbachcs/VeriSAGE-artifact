@@ -1,0 +1,21 @@
+{
+  "edge_precision": {
+    "opaque": {
+      "precision": 0.2451,
+      "recall": 1.0
+    },
+    "static": {
+      "precision": 0.7222,
+      "recall": 1.0
+    },
+    "static_dynamic": {
+      "precision": 1.0,
+      "recall": 0.9996
+    }
+  },
+  "c4_false_positive_pct": {
+    "opaque": 75.12,
+    "static": 36.7,
+    "static_dynamic": 8.49
+  }
+}

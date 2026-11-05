@@ -139,9 +139,9 @@ def conservatism_sweep(delta=0.05, n_mc=40000, seed=31):
 
 
 def main():
-    os.makedirs("../results", exist_ok=True)
+    os.makedirs("results", exist_ok=True)
     res = {"conservatism": conservatism_sweep()}
-    with open("../results/exp5_pathunion.json", "w") as f:
+    with open("results/exp5_pathunion.json", "w") as f:
         json.dump(res, f, indent=2)
     print("== path-union conservatism (slack_union / slack_true), delta=0.05 ==")
     print(f"{'|Pi|':>5} {'full':>7} {'top1':>7} {'top2':>7}  {'full_sound':>10} {'top1_sound':>10}")
@@ -149,7 +149,7 @@ def main():
         print(f"{c['n_paths']:>5} {c['conservatism_full_union_x']:>7.2f} "
               f"{c['conservatism_top1_prune_x']:>7.2f} {c['conservatism_top2_prune_x']:>7.2f}  "
               f"{c['full_sound_frac']:>10.2f} {c['top1_sound_frac']:>10.2f}")
-    print("\nwrote ../results/exp5_pathunion.json")
+    print("\nwrote results/exp5_pathunion.json")
 
 
 if __name__ == "__main__":

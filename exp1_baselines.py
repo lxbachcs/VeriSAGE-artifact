@@ -124,7 +124,7 @@ def main():
     seeds = [int(x) for x in (sys.argv[2].split(",") if len(sys.argv) > 2 else ["1", "2", "3"])]
     T = int(sys.argv[3]) if len(sys.argv) > 3 else 5
     n_per = int(sys.argv[4]) if len(sys.argv) > 4 else 10
-    os.makedirs("../results/raw", exist_ok=True)
+    os.makedirs("results/raw", exist_ok=True)
     per_seed, all_recs = [], []
     for sd in seeds:
         recs = run_suite(model, sd, T, n_per)
@@ -145,9 +145,9 @@ def main():
            "per_seed": per_seed,
            "aggregate": {f: agg(f) for f in fields}}
     tag = model.replace(":", "_").replace("/", "_")
-    with open(f"../results/exp1_baselines_{tag}.json", "w") as f:
+    with open(f"results/exp1_baselines_{tag}.json", "w") as f:
         json.dump(out, f, indent=2)
-    with open(f"../results/raw/exp1_{tag}.jsonl", "w") as f:
+    with open(f"results/raw/exp1_{tag}.jsonl", "w") as f:
         for r in all_recs:
             f.write(json.dumps(r) + "\n")
     print("\n=== EXP1 AGGREGATE (mean +/- std over seeds) ===")
@@ -160,7 +160,7 @@ def main():
         print(f"  {nm:32s} CSR={a['mean']:.1f}+/-{a['std']:.1f}  "
               f"(easy {ae['mean']:.1f}, hard {ah['mean']:.1f})")
     print(f"  VeriSAGE mean repair iters = {out['aggregate']['verisage_mean_iters']['mean']}")
-    print(f"wrote ../results/exp1_baselines_{tag}.json")
+    print(f"wrote results/exp1_baselines_{tag}.json")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,101 @@
+===== llama3.2:3b 23:49:26 =====
+[llama3.2:3b] 10/30  17s  {'direct_certified': np.float64(0.0), 'single_shot_certified': np.float64(0.0), 'blind_certified': np.float64(0.0), 'verisage_certified': np.float64(90.0)}
+[llama3.2:3b] 20/30  32s  {'direct_certified': np.float64(0.0), 'single_shot_certified': np.float64(0.0), 'blind_certified': np.float64(0.0), 'verisage_certified': np.float64(85.0)}
+[llama3.2:3b] 30/30  47s  {'direct_certified': np.float64(0.0), 'single_shot_certified': np.float64(0.0), 'blind_certified': np.float64(0.0), 'verisage_certified': np.float64(86.7)}
+
+=== SUMMARY ===
+{
+  "model": "llama3.2:3b",
+  "n": 30,
+  "T": 4,
+  "direct_CSR": 0.0,
+  "single_shot_CSR": 0.0,
+  "blind_CSR": 0.0,
+  "verisage_CSR": 86.66666666666667,
+  "direct_HAR": 0.0,
+  "direct_SV": 0.0,
+  "verisage_mean_iters": 1.5333333333333334,
+  "verisage_PC": 100.0,
+  "wall_s": 47.3
+}
+===== qwen2.5:7b 23:50:14 =====
+[qwen2.5:7b] 10/30  6s  {'direct_certified': np.float64(90.0), 'single_shot_certified': np.float64(90.0), 'blind_certified': np.float64(100.0), 'verisage_certified': np.float64(100.0)}
+[qwen2.5:7b] 20/30  9s  {'direct_certified': np.float64(95.0), 'single_shot_certified': np.float64(95.0), 'blind_certified': np.float64(100.0), 'verisage_certified': np.float64(100.0)}
+[qwen2.5:7b] 30/30  13s  {'direct_certified': np.float64(93.3), 'single_shot_certified': np.float64(93.3), 'blind_certified': np.float64(100.0), 'verisage_certified': np.float64(100.0)}
+
+=== SUMMARY ===
+{
+  "model": "qwen2.5:7b",
+  "n": 30,
+  "T": 4,
+  "direct_CSR": 93.33333333333333,
+  "single_shot_CSR": 93.33333333333333,
+  "blind_CSR": 100.0,
+  "verisage_CSR": 100.0,
+  "direct_HAR": 0.0,
+  "direct_SV": 93.33333333333333,
+  "verisage_mean_iters": 0.06666666666666667,
+  "verisage_PC": 100.0,
+  "wall_s": 13.0
+}
+===== qwen2.5:14b 23:50:27 =====
+[qwen2.5:14b] 10/30  8s  {'direct_certified': np.float64(100.0), 'single_shot_certified': np.float64(100.0), 'blind_certified': np.float64(100.0), 'verisage_certified': np.float64(100.0)}
+[qwen2.5:14b] 20/30  15s  {'direct_certified': np.float64(100.0), 'single_shot_certified': np.float64(100.0), 'blind_certified': np.float64(100.0), 'verisage_certified': np.float64(100.0)}
+[qwen2.5:14b] 30/30  22s  {'direct_certified': np.float64(100.0), 'single_shot_certified': np.float64(100.0), 'blind_certified': np.float64(100.0), 'verisage_certified': np.float64(100.0)}
+
+=== SUMMARY ===
+{
+  "model": "qwen2.5:14b",
+  "n": 30,
+  "T": 4,
+  "direct_CSR": 100.0,
+  "single_shot_CSR": 100.0,
+  "blind_CSR": 100.0,
+  "verisage_CSR": 100.0,
+  "direct_HAR": 0.0,
+  "direct_SV": 100.0,
+  "verisage_mean_iters": 0.0,
+  "verisage_PC": 100.0,
+  "wall_s": 22.2
+}
+===== qwen2.5:72b 23:50:49 =====
+[qwen2.5:72b] 10/30  28s  {'direct_certified': np.float64(100.0), 'single_shot_certified': np.float64(100.0), 'blind_certified': np.float64(100.0), 'verisage_certified': np.float64(100.0)}
+[qwen2.5:72b] 20/30  61s  {'direct_certified': np.float64(100.0), 'single_shot_certified': np.float64(100.0), 'blind_certified': np.float64(100.0), 'verisage_certified': np.float64(100.0)}
+[qwen2.5:72b] 30/30  94s  {'direct_certified': np.float64(100.0), 'single_shot_certified': np.float64(100.0), 'blind_certified': np.float64(100.0), 'verisage_certified': np.float64(100.0)}
+
+=== SUMMARY ===
+{
+  "model": "qwen2.5:72b",
+  "n": 30,
+  "T": 4,
+  "direct_CSR": 100.0,
+  "single_shot_CSR": 100.0,
+  "blind_CSR": 100.0,
+  "verisage_CSR": 100.0,
+  "direct_HAR": 0.0,
+  "direct_SV": 100.0,
+  "verisage_mean_iters": 0.0,
+  "verisage_PC": 100.0,
+  "wall_s": 94.0
+}
+===== llama3.3:70b 23:52:23 =====
+[llama3.3:70b] 10/30  43s  {'direct_certified': np.float64(100.0), 'single_shot_certified': np.float64(100.0), 'blind_certified': np.float64(100.0), 'verisage_certified': np.float64(100.0)}
+[llama3.3:70b] 20/30  75s  {'direct_certified': np.float64(100.0), 'single_shot_certified': np.float64(100.0), 'blind_certified': np.float64(100.0), 'verisage_certified': np.float64(100.0)}
+[llama3.3:70b] 30/30  113s  {'direct_certified': np.float64(96.7), 'single_shot_certified': np.float64(96.7), 'blind_certified': np.float64(100.0), 'verisage_certified': np.float64(100.0)}
+
+=== SUMMARY ===
+{
+  "model": "llama3.3:70b",
+  "n": 30,
+  "T": 4,
+  "direct_CSR": 96.66666666666667,
+  "single_shot_CSR": 96.66666666666667,
+  "blind_CSR": 100.0,
+  "verisage_CSR": 100.0,
+  "direct_HAR": 0.0,
+  "direct_SV": 96.66666666666667,
+  "verisage_mean_iters": 0.03333333333333333,
+  "verisage_PC": 100.0,
+  "wall_s": 113.0
+}
+LADDER COMPLETE 23:54:16

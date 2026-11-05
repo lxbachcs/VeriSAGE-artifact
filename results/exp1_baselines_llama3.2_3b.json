@@ -1,0 +1,119 @@
+{
+  "model": "llama3.2:3b",
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "T": 4,
+  "n_tasks": 100,
+  "strata": {
+    "easy": [
+      1.5,
+      1.8,
+      2.1,
+      2.4,
+      2.7
+    ],
+    "hard": [
+      1.2,
+      1.35,
+      1.5,
+      1.65,
+      1.8
+    ]
+  },
+  "per_seed": [
+    {
+      "n": 100,
+      "accept_first_CSR": 0.0,
+      "accept_first_CSR_easy": 0.0,
+      "accept_first_CSR_hard": 0.0,
+      "blind_resample_CSR": 0.0,
+      "blind_resample_CSR_easy": 0.0,
+      "blind_resample_CSR_hard": 0.0,
+      "verisage_CSR": 0.0,
+      "verisage_CSR_easy": 0.0,
+      "verisage_CSR_hard": 0.0,
+      "verisage_mean_iters": 3.0,
+      "accept_first_hallucinated_pct": 0.0,
+      "seed": 1
+    },
+    {
+      "n": 100,
+      "accept_first_CSR": 0.0,
+      "accept_first_CSR_easy": 0.0,
+      "accept_first_CSR_hard": 0.0,
+      "blind_resample_CSR": 0.0,
+      "blind_resample_CSR_easy": 0.0,
+      "blind_resample_CSR_hard": 0.0,
+      "verisage_CSR": 0.0,
+      "verisage_CSR_easy": 0.0,
+      "verisage_CSR_hard": 0.0,
+      "verisage_mean_iters": 3.0,
+      "accept_first_hallucinated_pct": 1.0,
+      "seed": 2
+    },
+    {
+      "n": 100,
+      "accept_first_CSR": 0.0,
+      "accept_first_CSR_easy": 0.0,
+      "accept_first_CSR_hard": 0.0,
+      "blind_resample_CSR": 0.0,
+      "blind_resample_CSR_easy": 0.0,
+      "blind_resample_CSR_hard": 0.0,
+      "verisage_CSR": 0.0,
+      "verisage_CSR_easy": 0.0,
+      "verisage_CSR_hard": 0.0,
+      "verisage_mean_iters": 3.0,
+      "accept_first_hallucinated_pct": 2.0,
+      "seed": 3
+    }
+  ],
+  "aggregate": {
+    "accept_first_CSR": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "accept_first_CSR_easy": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "accept_first_CSR_hard": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "blind_resample_CSR": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "blind_resample_CSR_easy": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "blind_resample_CSR_hard": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "verisage_CSR": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "verisage_CSR_easy": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "verisage_CSR_hard": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "verisage_mean_iters": {
+      "mean": 3.0,
+      "std": 0.0
+    },
+    "accept_first_hallucinated_pct": {
+      "mean": 1.0,
+      "std": 0.82
+    }
+  }
+}

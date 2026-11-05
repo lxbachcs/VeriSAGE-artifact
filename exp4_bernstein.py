@@ -248,7 +248,7 @@ def recalibrate_qws_real(delta=0.05, n_plans=32000, mc=3000, seed=23):
 
 
 def main():
-    os.makedirs("../results", exist_ok=True)
+    os.makedirs("results", exist_ok=True)
     res = {}
     print("EXP4 (1) slack by concentration ...")
     res["slack_by_concentration"] = slack_by_concentration()
@@ -256,7 +256,7 @@ def main():
     res["recalibrate_32k"] = recalibrate_32k()
     print("EXP4 (3) REAL-DATA (QWS) soundness ...")
     res["qws_real"] = recalibrate_qws_real()
-    with open("../results/exp4_bernstein.json", "w") as f:
+    with open("results/exp4_bernstein.json", "w") as f:
         json.dump(res, f, indent=2)
 
     print("\n== (1) slack ratio vs variance fraction rho (delta=0.05, m=8) ==")
@@ -275,7 +275,7 @@ def main():
     print(f"  Hoeff/Bennett slack {q['slack_ratio_hoeff_over_bennett_mean']:.2f}x, "
           f"Bennett cuts slack {q['slack_reduction_bennett_pct_mean']:.1f}%")
     print(f"  empirical soundness on real bootstrapped latencies: {q['empirical_sound_frac']}")
-    print("\nwrote ../results/exp4_bernstein.json")
+    print("\nwrote results/exp4_bernstein.json")
 
 
 if __name__ == "__main__":

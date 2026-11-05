@@ -196,7 +196,7 @@ def _unsat_tasks(base_cat: Dict[str, Service], base_goal: Goal):
 
 
 def main():
-    os.makedirs("../results", exist_ok=True)
+    os.makedirs("results", exist_ok=True)
     rng = np.random.default_rng(9)
     cat = build_catalogue()
     from catalog import make_goal
@@ -240,7 +240,7 @@ def main():
         sweep.append(e)
     res["runtime_coverage_sweep_regulated_unsat"] = sweep
 
-    with open("../results/exp9_ucomplete.json", "w") as f:
+    with open("results/exp9_ucomplete.json", "w") as f:
         json.dump(res, f, indent=2)
 
     print("== U-complete bounded enumerator (sound INFEASIBLE) ==")
@@ -257,7 +257,7 @@ def main():
     for e in sweep:
         print(f"  {e['L_max']:>5} {e['expanded']:>10} {e['wall_s']:>9} "
               f"{e['explored_fraction']:>14.2e} {e['verdict']:>11}")
-    print("\nwrote ../results/exp9_ucomplete.json")
+    print("\nwrote results/exp9_ucomplete.json")
 
 
 if __name__ == "__main__":

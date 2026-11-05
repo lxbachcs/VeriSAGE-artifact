@@ -1,0 +1,14 @@
+{
+  "model": "llama3.2:3b",
+  "n": 30,
+  "T": 4,
+  "direct_CSR": 0.0,
+  "single_shot_CSR": 0.0,
+  "blind_CSR": 0.0,
+  "verisage_CSR": 86.66666666666667,
+  "direct_HAR": 0.0,
+  "direct_SV": 0.0,
+  "verisage_mean_iters": 1.5333333333333334,
+  "verisage_PC": 100.0,
+  "wall_s": 47.3
+}

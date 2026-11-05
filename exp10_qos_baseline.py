@@ -211,7 +211,7 @@ def run_catalogue(name, cat, goal, L_max, ga_seeds=(0, 1, 2, 3, 4),
 
 
 def main():
-    os.makedirs("../results", exist_ok=True)
+    os.makedirs("results", exist_ok=True)
     rng = np.random.default_rng(10)
     res = {}
     # payment catalogue
@@ -225,7 +225,7 @@ def main():
     res["regulated"] = run_catalogue("regulated", hc, hg, L_max=14,
                                      vs_ref_plan=REFERENCE)
 
-    with open("../results/exp10_qos_baseline.json", "w") as f:
+    with open("results/exp10_qos_baseline.json", "w") as f:
         json.dump(res, f, indent=2)
 
     print("== QoS optimizer vs VeriSAGE (shared tasks) ==")
@@ -243,7 +243,7 @@ def main():
         print(f"  VeriSAGE: lat={v.get('latency_mean')} CSTS-certified=True "
               f"(price of certification vs QoS optimum: "
               f"+{r['latency_gap_verisage_vs_milp']} mean-latency)")
-    print("\nwrote ../results/exp10_qos_baseline.json")
+    print("\nwrote results/exp10_qos_baseline.json")
 
 
 if __name__ == "__main__":

@@ -67,7 +67,7 @@ def main():
 
     # write into the existing exp1 json aggregate (mean/std format), std=0 (1 seed)
     tag = model.replace(":", "_").replace("/", "_")
-    path = f"../results/exp1_baselines_{tag}.json"
+    path = f"results/exp1_baselines_{tag}.json"
     with open(path) as f:
         d = json.load(f)
     for k, v in res.items():

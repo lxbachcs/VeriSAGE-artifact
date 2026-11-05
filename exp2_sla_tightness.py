@@ -174,7 +174,7 @@ def repair_impact(delta=0.05, n_tasks=3000, model="uniform", seed=13):
 
 
 def main():
-    os.makedirs("../results", exist_ok=True)
+    os.makedirs("results", exist_ok=True)
     res = {}
     print("EXP2 (1) gap analysis ...");        res["gap"] = gap_analysis()
     print("EXP2 (2) acceptance impact ...")
@@ -182,7 +182,7 @@ def main():
     res["acceptance_twopoint"] = acceptance_impact(model="twopoint")
     print("EXP2 (3) repair impact ...")
     res["repair_uniform"] = repair_impact(model="uniform")
-    with open("../results/exp2_sla_tightness.json", "w") as f:
+    with open("results/exp2_sla_tightness.json", "w") as f:
         json.dump(res, f, indent=2)
 
     print("\n== (1) bound vs empirical (Uniform latencies) ==")
@@ -203,7 +203,7 @@ def main():
     print("== (3) repair iterations @ delta=0.05 (Uniform) ==")
     print(f"  mean iters Hoeffding={r['mean_iters_hoeffding']} vs oracle={r['mean_iters_oracle']}  "
           f"extra-iter tasks={r['extra_iters_pct']}%")
-    print("\nwrote ../results/exp2_sla_tightness.json")
+    print("\nwrote results/exp2_sla_tightness.json")
 
 
 if __name__ == "__main__":

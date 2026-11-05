@@ -1,0 +1,14 @@
+{
+  "model": "command-r:35b",
+  "n": 30,
+  "T": 4,
+  "direct_CSR": 93.33333333333333,
+  "single_shot_CSR": 93.33333333333333,
+  "blind_CSR": 100.0,
+  "verisage_CSR": 100.0,
+  "direct_HAR": 0.0,
+  "direct_SV": 93.33333333333333,
+  "verisage_mean_iters": 0.1,
+  "verisage_PC": 100.0,
+  "wall_s": 50.2
+}

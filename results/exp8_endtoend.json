@@ -1,0 +1,129 @@
+{
+  "sources": {
+    "structural": "measured exp3 breakdown_k200 (us)",
+    "smt_c2": "measured z3 4.15.4 (author workstation)"
+  },
+  "structural_nonC2_us_per_service": 0.2824,
+  "by_k": [
+    {
+      "k": 6,
+      "structural_nonC2_ms": 0.00169,
+      "regimes": {
+        "light": {
+          "mean_ms": 1.9627,
+          "p50_ms": 1.9572,
+          "p95_ms": 2.0665,
+          "mean_ms_per_service": 0.3271
+        },
+        "mixed": {
+          "mean_ms": 2.1282,
+          "p50_ms": 2.1246,
+          "p95_ms": 2.3699,
+          "mean_ms_per_service": 0.3547
+        },
+        "heavy": {
+          "mean_ms": 4.202,
+          "p50_ms": 4.2009,
+          "p95_ms": 4.865,
+          "mean_ms_per_service": 0.7003
+        }
+      }
+    },
+    {
+      "k": 13,
+      "structural_nonC2_ms": 0.00367,
+      "regimes": {
+        "light": {
+          "mean_ms": 4.2516,
+          "p50_ms": 4.2544,
+          "p95_ms": 4.4076,
+          "mean_ms_per_service": 0.327
+        },
+        "mixed": {
+          "mean_ms": 4.5998,
+          "p50_ms": 4.5961,
+          "p95_ms": 4.9525,
+          "mean_ms_per_service": 0.3538
+        },
+        "heavy": {
+          "mean_ms": 9.0985,
+          "p50_ms": 9.1024,
+          "p95_ms": 10.0267,
+          "mean_ms_per_service": 0.6999
+        }
+      }
+    },
+    {
+      "k": 25,
+      "structural_nonC2_ms": 0.00706,
+      "regimes": {
+        "light": {
+          "mean_ms": 8.1771,
+          "p50_ms": 8.1754,
+          "p95_ms": 8.4002,
+          "mean_ms_per_service": 0.3271
+        },
+        "mixed": {
+          "mean_ms": 8.8519,
+          "p50_ms": 8.8417,
+          "p95_ms": 9.3217,
+          "mean_ms_per_service": 0.3541
+        },
+        "heavy": {
+          "mean_ms": 17.4834,
+          "p50_ms": 17.4872,
+          "p95_ms": 18.798,
+          "mean_ms_per_service": 0.6993
+        }
+      }
+    },
+    {
+      "k": 50,
+      "structural_nonC2_ms": 0.01412,
+      "regimes": {
+        "light": {
+          "mean_ms": 16.3515,
+          "p50_ms": 16.3516,
+          "p95_ms": 16.6722,
+          "mean_ms_per_service": 0.327
+        },
+        "mixed": {
+          "mean_ms": 17.6888,
+          "p50_ms": 17.6813,
+          "p95_ms": 18.3307,
+          "mean_ms_per_service": 0.3538
+        },
+        "heavy": {
+          "mean_ms": 34.9387,
+          "p50_ms": 34.955,
+          "p95_ms": 36.8286,
+          "mean_ms_per_service": 0.6988
+        }
+      }
+    },
+    {
+      "k": 100,
+      "structural_nonC2_ms": 0.02824,
+      "regimes": {
+        "light": {
+          "mean_ms": 32.7098,
+          "p50_ms": 32.7128,
+          "p95_ms": 33.1544,
+          "mean_ms_per_service": 0.3271
+        },
+        "mixed": {
+          "mean_ms": 35.3892,
+          "p50_ms": 35.3907,
+          "p95_ms": 36.2955,
+          "mean_ms_per_service": 0.3539
+        },
+        "heavy": {
+          "mean_ms": 69.9275,
+          "p50_ms": 69.9216,
+          "p95_ms": 72.5466,
+          "mean_ms_per_service": 0.6993
+        }
+      }
+    }
+  ]
+}

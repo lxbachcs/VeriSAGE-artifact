@@ -1,0 +1,102 @@
+{
+  "model": "gpt-4o",
+  "seeds": [
+    1
+  ],
+  "T": 4,
+  "n_tasks": 100,
+  "strata": {
+    "easy": [
+      1.5,
+      1.8,
+      2.1,
+      2.4,
+      2.7
+    ],
+    "hard": [
+      1.2,
+      1.35,
+      1.5,
+      1.65,
+      1.8
+    ]
+  },
+  "per_seed": [
+    {
+      "n": 100,
+      "accept_first_CSR": 63.0,
+      "accept_first_CSR_easy": 100.0,
+      "accept_first_CSR_hard": 26.0,
+      "blind_resample_CSR": 79.0,
+      "blind_resample_CSR_easy": 100.0,
+      "blind_resample_CSR_hard": 58.0,
+      "self_refine_CSR": 59.0,
+      "self_refine_CSR_easy": 70.0,
+      "self_refine_CSR_hard": 48.0,
+      "verisage_CSR": 90.0,
+      "verisage_CSR_easy": 100.0,
+      "verisage_CSR_hard": 80.0,
+      "verisage_mean_iters": 0.57,
+      "accept_first_hallucinated_pct": 0.0,
+      "seed": 1
+    }
+  ],
+  "aggregate": {
+    "accept_first_CSR": {
+      "mean": 63.0,
+      "std": 0.0
+    },
+    "accept_first_CSR_easy": {
+      "mean": 100.0,
+      "std": 0.0
+    },
+    "accept_first_CSR_hard": {
+      "mean": 26.0,
+      "std": 0.0
+    },
+    "blind_resample_CSR": {
+      "mean": 79.0,
+      "std": 0.0
+    },
+    "blind_resample_CSR_easy": {
+      "mean": 100.0,
+      "std": 0.0
+    },
+    "blind_resample_CSR_hard": {
+      "mean": 58.0,
+      "std": 0.0
+    },
+    "self_refine_CSR": {
+      "mean": 59.0,
+      "std": 0.0
+    },
+    "self_refine_CSR_easy": {
+      "mean": 70.0,
+      "std": 0.0
+    },
+    "self_refine_CSR_hard": {
+      "mean": 48.0,
+      "std": 0.0
+    },
+    "verisage_CSR": {
+      "mean": 90.0,
+      "std": 0.0
+    },
+    "verisage_CSR_easy": {
+      "mean": 100.0,
+      "std": 0.0
+    },
+    "verisage_CSR_hard": {
+      "mean": 80.0,
+      "std": 0.0
+    },
+    "verisage_mean_iters": {
+      "mean": 0.57,
+      "std": 0.0
+    },
+    "accept_first_hallucinated_pct": {
+      "mean": 0.0,
+      "std": 0.0
+    }
+  }
+}

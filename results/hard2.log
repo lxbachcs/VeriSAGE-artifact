@@ -1,0 +1,2 @@
+===== qwen2.5:7b 00:26:32 =====
+[qwen2.5:7b] 10/30  66s  {'direct_certified': np.float64(0.0), 'single_shot_certified': np.float64(0.0), 'blind_certified': np.float64(10.0), 'verisage_certified': np.float64(20.0)}

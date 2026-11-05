@@ -1,0 +1,15 @@
+{
+  "model": "gemma2:9b",
+  "n": 30,
+  "T": 4,
+  "suite": "easy",
+  "direct_CSR": 90.0,
+  "single_shot_CSR": 90.0,
+  "blind_CSR": 100.0,
+  "verisage_CSR": 96.66666666666667,
+  "direct_HAR": 0.0,
+  "direct_SV": 90.0,
+  "verisage_mean_iters": 0.16666666666666666,
+  "verisage_PC": 100.0,
+  "wall_s": 20.8
+}

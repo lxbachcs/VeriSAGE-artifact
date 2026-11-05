@@ -142,14 +142,14 @@ def track_unsafe_admission(rates, n=1500, seed=73):
 
 
 def main():
-    os.makedirs("../results", exist_ok=True)
+    os.makedirs("results", exist_ok=True)
     rates = [0.0, 0.05, 0.1, 0.2, 0.3]
     res = {
         "rates": rates,
         "false_rejection": track_false_rejection(rates),
         "unsafe_admission": track_unsafe_admission(rates),
     }
-    with open("../results/exp17_noisy_contract.json", "w") as f:
+    with open("results/exp17_noisy_contract.json", "w") as f:
         json.dump(res, f, indent=2)
 
     print("== EXP17 contract-noise robustness (Q4) ==")
@@ -161,7 +161,7 @@ def main():
     print("\n  Over-strict noise -> conservative false rejections (become Abstain/repair).")
     print("  Relaxation noise  -> unsafe admissions only vs the *wrong* contract, ~linear in p.")
     print("  At p=0 both error modes are 0: the verifier is exact for the stated contract.")
-    print("\nwrote ../results/exp17_noisy_contract.json")
+    print("\nwrote results/exp17_noisy_contract.json")
 
 
 if __name__ == "__main__":

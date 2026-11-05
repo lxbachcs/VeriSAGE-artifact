@@ -220,13 +220,13 @@ def z3_smt_c2_microbench():
 
 
 def main():
-    os.makedirs("../results", exist_ok=True)
+    os.makedirs("results", exist_ok=True)
     res = {}
     print("EXP3 (A/B) scalability vs k ..."); res["scal_k"] = sweep_k()
     print("EXP3 (C) scalability vs |Phi| ..."); res["scal_phi"] = sweep_phi()
     print("EXP3 breakdown at k=200 ..."); res["breakdown_k200"] = per_check_breakdown()
     print("EXP3 (D) Z3 SMT C2 microbench ..."); res["z3_c2"] = z3_smt_c2_microbench()
-    with open("../results/exp3_scalability.json", "w") as f:
+    with open("results/exp3_scalability.json", "w") as f:
         json.dump(res, f, indent=2)
     # console summary
     m = res["scal_k"]
@@ -242,7 +242,7 @@ def main():
         print("== Z3-backed C2 real SMT cost (ms/service) ==")
         for r in res["z3_c2"]["curve"]:
             print(f"  atoms={r['n_atoms']:>2}  {r['ms_mean']:.4f} ms")
-    print("\nwrote ../results/exp3_scalability.json")
+    print("\nwrote results/exp3_scalability.json")
 
 
 if __name__ == "__main__":

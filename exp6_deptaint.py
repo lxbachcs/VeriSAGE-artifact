@@ -122,7 +122,7 @@ def synthetic_c4_fp(n_plans=20000, opaque_frac=0.5, seed=41, mitigate=False):
 
 
 def main():
-    os.makedirs("../results", exist_ok=True)
+    os.makedirs("results", exist_ok=True)
     rng = np.random.default_rng(41)
     res = {}
     # (1) edge over-taint on the two real catalogues, sweeping opaque fraction
@@ -136,7 +136,7 @@ def main():
     res["c4_fp_mitigated"] = {
         f"opaque_{int(100*f)}": synthetic_c4_fp(opaque_frac=f, mitigate=True)
         for f in (0.25, 0.5, 0.75, 1.0)}
-    with open("../results/exp6_deptaint.json", "w") as f:
+    with open("results/exp6_deptaint.json", "w") as f:
         json.dump(res, f, indent=2)
 
     print("== (1) edge over-taint (spurious dep-edge rate) vs opaque fraction ==")
@@ -149,7 +149,7 @@ def main():
         a = res["c4_fp_synthetic"][k]; b = res["c4_fp_mitigated"][k]
         print(f"  {k}: {a['c4_false_positive_rate_pct']:.1f}%  "
               f"-> mitigated {b['c4_false_positive_rate_pct']:.1f}%")
-    print("\nwrote ../results/exp6_deptaint.json")
+    print("\nwrote results/exp6_deptaint.json")
 
 
 if __name__ == "__main__":
