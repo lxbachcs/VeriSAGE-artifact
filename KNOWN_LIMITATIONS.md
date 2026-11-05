@@ -41,14 +41,15 @@ against independently labelled dependency graphs.
   not joint invocation traces of the evaluated workflows.
 - The reduced C1+C2 ablation is internal. It is not an evaluation of Clover.
 
-## Extended-report statements requiring correction
+## Report corrections and remaining implementation work
 
-The repair-progress statement bounds failing attempts by the number of witness
-classes. A final successful proposal may require one additional attempt.
-The DAG Hoeffding expression needs nonnegative slack for every path, or a
-contribution of 1 for each path whose mean exceeds the budget. The offline
-`exp5_pathunion.py` implementation already handles nonpositive slack.
+The revised extended report now distinguishes the full formal design from the
+implemented checks. It corrects the repair bound to allow a final successful
+proposal after at most N failing proposals, adds the nonnegative path-slack
+condition to the DAG Hoeffding expression, and identifies the C1+C2 experiment
+as an internal ablation rather than an evaluation of Clover. It also labels the
+dependency experiments as separate synthetic simulations.
 
-The attached extended report retains these open findings. Matching stored
-numbers does not resolve them. No new experiments or verifier fixes are claimed
-by this publication step.
+These are documentation and mathematical-statement corrections. The prototype's
+C4 propagation defect remains unresolved, and no new experiments or verifier
+algorithm changes are claimed. Matching stored numbers does not resolve it.

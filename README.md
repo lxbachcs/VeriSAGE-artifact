@@ -68,8 +68,8 @@ the distinctions between implementation, offline simulations, and design claims.
 | Correlated latencies, Cantelli fallback | `exp11_correlation.py` | `results/exp11_correlation.json` |
 | 0.27 µs/service to k=200; Z3 0.30–1.11 ms/service | `exp3_scalability.py` | `results/exp3_scalability.json` |
 | 13-service plan 4.3–9.1 ms, 100-service 33–70 ms | `exp8_endtoend.py` | `results/exp8_endtoend.json` |
-| Table 5(a) stratified suite | `exp1_baselines.py` (+`exp1b_selfrefine.py`) | `results/exp1_baselines_*.json` |
-| Table 5(b) hard-task ladder | `experiments_llm.py <model> 20 6 hard` | `results/llm_summary_*_hard.json` |
+| Table 5 stratified suite | `exp1_baselines.py` (+`exp1b_selfrefine.py`) | `results/exp1_baselines_*.json` |
+| RQ3 hard-task case (full ladder retained) | `experiments_llm.py <model> 20 6 hard` | `results/llm_summary_*_hard.json` |
 | Agentic baselines (self-consistency, CRITIC, LATS) | `exp16_agentic.py` | `results/exp16_agentic_*.json` |
 | Typed vs check-list vs no feedback | `exp7_repair_ablation.py` | `results/exp7_repair_ablation.json` |
 | Priority-ordered multi-defect repair | `exp14_multidefect.py` | `results/exp14_multidefect.json` |
